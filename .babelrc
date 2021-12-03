@@ -4,12 +4,12 @@
   ], //Next.js的总配置文件，相当于继承了它本身的所有配置
   "plugins": [
     // 可以使用装饰器decorator
-    [
-      "@babel/plugin-proposal-decorators",
-      {
-        "legacy": true
-      }
-    ],
+    // [
+    //   "@babel/plugin-proposal-decorators",
+    //   {
+    //     "legacy": true
+    //   }
+    // ],
     // 让我们可以使用根路径，避免相对路径的混乱，如import Head from '@/components/Head'
     // [
     //   "module-resolver",
@@ -23,8 +23,8 @@
     [
       "import",
       {
-        "libraryName": "antd",
-        "style": true
+        "libraryName": "antd"
+        // "style": true
       }
     ]
   ]

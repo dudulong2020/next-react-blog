@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
-import '../static/style/components/MyList.css'
+import '../static/style/components/mylist.css'
 
 
 

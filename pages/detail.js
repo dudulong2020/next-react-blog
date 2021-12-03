@@ -5,7 +5,7 @@ import { Row, Col, List, Icon, Breadcrumb, Affix } from 'antd'
 import { CalendarOutlined, FolderOutlined, FireOutlined } from '@ant-design/icons';
 import Author from '../components/Author'
 import Advert from '../components/Advert'
-import '../static/style/components/MyList.css'
+import '../static/style/components/mylist.css'
 import '../static/style/pages/detail.css'
 
 import ReactMarkdown from 'react-markdown'
