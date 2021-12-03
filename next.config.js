@@ -20,7 +20,7 @@ module.exports = withLess(
   WithCss({
     lessLoaderOptions: {
       modifyVars: {
-        'primary-color': '#1DA57A'
+        // 'primary-color': '#1DA57A'
       },
       javascriptEnabled: true
     },
