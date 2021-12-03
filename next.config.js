@@ -14,7 +14,7 @@ if (typeof require !== 'undefined') {
   require.extensions['.less'] = file => {};
 }
 
-const prod = process.env.NODE_ENV === 'production';
+// const prod = process.env.NODE_ENV === 'production';
 
 module.exports = withLess(
   WithCss({
@@ -30,9 +30,9 @@ module.exports = withLess(
     // publicRuntimeConfig: {
     //   linkPrefix: prod ? '/next-react-blog' : ''
     // }
-    assetPrefix: prod ? '/blog' : '',
-    publicRuntimeConfig: {
-      linkPrefix: prod ? '/blog' : ''
-    }
+    // assetPrefix: prod ? '/blog' : '',
+    // publicRuntimeConfig: {
+    //   linkPrefix: prod ? '/blog' : ''
+    // }
   })
 );
