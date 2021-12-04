@@ -26,9 +26,9 @@ module.exports = withLess(
     },
 
     // next-antd-ssr这个名字是你github项目名称
-    assetPrefix: prod ? '/next-react-blog' : '',
+    assetPrefix: prod ? '/next-react-blog/' : '',
     publicRuntimeConfig: {
-      linkPrefix: prod ? '/next-react-blog' : ''
+      linkPrefix: prod ? '/next-react-blog/' : ''
     }
     // assetPrefix: prod ? '/blog' : '',
     // publicRuntimeConfig: {
