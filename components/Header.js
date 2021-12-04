@@ -5,7 +5,7 @@ import '../static/style/components/Header.css';
 
 import Link from 'next/link'
 
-// import getConfig from '../next.config';
+// import getConfig from 'next-server/config';
 // const { linkPrefix } = getConfig().publicRuntimeConfig;
 
 const Header = () => (
