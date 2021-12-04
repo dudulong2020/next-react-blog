@@ -14,7 +14,7 @@ if (typeof require !== 'undefined') {
   require.extensions['.less'] = file => {};
 }
 
-// const prod = process.env.NODE_ENV === 'production';
+const prod = process.env.NODE_ENV === 'production';
 
 module.exports = withLess(
   WithCss({
@@ -26,10 +26,10 @@ module.exports = withLess(
     },
 
     // next-antd-ssr这个名字是你github项目名称
-    // assetPrefix: prod ? '/next-react-blog' : '',
-    // publicRuntimeConfig: {
-    //   linkPrefix: prod ? '/next-react-blog' : ''
-    // }
+    assetPrefix: prod ? '/next-react-blog' : '',
+    publicRuntimeConfig: {
+      linkPrefix: prod ? '/next-react-blog' : ''
+    }
     // assetPrefix: prod ? '/blog' : '',
     // publicRuntimeConfig: {
     //   linkPrefix: prod ? '/blog' : ''

@@ -13,7 +13,7 @@ const Header = () => (
     <Row type="flex" justify='center'>
       <Col xs={24} sm={24} md={10} lg={10} xl={10}>
         <span className='header-logo'>
-          技术博客
+          技术博客123456
         </span>
         <span className='header-txt'>
         Single Shared Layout with Custom App
@@ -42,13 +42,13 @@ const Header = () => (
         >
           <Menu.Item key="home" icon={<AppstoreOutlined />}>
             <Link href="/">
-              <a>首页</a>
+              <a>首页111</a>
             </Link>
           </Menu.Item>
 
           <Menu.Item key="video" icon={<YoutubeOutlined />}>
             <Link href="/list">
-              <a>视频</a>
+              <a>视频222</a>
             </Link>
           </Menu.Item>
 
@@ -58,7 +58,7 @@ const Header = () => (
               详情
             </Link> */}
             <Link href="/detail">
-              <a>详情</a>
+              <a>详情333</a>
             </Link>
           </Menu.Item>
         </Menu>
