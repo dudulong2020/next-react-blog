@@ -1,4 +1,4 @@
-(window["webpackJsonp_N_E"] = window["webpackJsonp_N_E"] || []).push([["styles"],{
+webpackHotUpdate_N_E("styles",{
 
 /***/ "./node_modules/antd/dist/antd.css":
 /*!*****************************************!*\
@@ -55,4 +55,4 @@ eval("// extracted by mini-css-extract-plugin;\n    if (true) {\n      var injec
 
 /***/ })
 
-}]);
+})
