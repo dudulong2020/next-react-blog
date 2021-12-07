@@ -37,3 +37,11 @@ body{
   display: inline-block;
   padding: 0 10px;
 }
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.15rem;
+  fill: currentColor;
+  overflow: hidden;
+}

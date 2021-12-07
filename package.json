@@ -18,12 +18,14 @@
     "axios": "^0.24.0",
     "babel-plugin-import": "^1.13.1",
     "babel-plugin-module-resolver": "^4.1.0",
+    "highlight": "^0.2.0",
     "less": "^2.7.3",
+    "lodash": "^3.9.0",
     "markdown-navbar": "^1.4.3",
+    "marked": "^4.0.6",
     "next": "^9.5.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-markdown": "^6.0.2",
     "serve": "^13.0.2"
   },
   "devDependencies": {
