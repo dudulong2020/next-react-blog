@@ -18,11 +18,12 @@
 pre{
   display: block;
   background-color:#f3f3f3;
-   padding: .5rem !important;
-   overflow-y: auto;
-   font-weight: 300;
-   font-family: Menlo, monospace;
-   border-radius: .3rem;
+  padding: .5rem !important;
+  overflow-y: auto;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-radius: .3rem;
+  width: 80%;
 }
 pre{
   background-color: #283646 !important;
@@ -44,6 +45,13 @@ code {
   color:#4f4f4f;
   margin: 0px 3px;
 
+}
+
+blockquote{
+  border-left:4px solid #cbcbcb ;
+  padding: 10px; 
+  background-color: #f8f8f8;
+  width: 80%;
 }
 
 .title-anchor{
@@ -85,4 +93,24 @@ iframe{
 }
 .ant-anchor-wrapper{
   padding: 5px !important;
+}
+
+
+.gzh-div {
+  margin-left: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #cce4fb;
+  text-align: center;
+}
+
+.gzh-title {
+  text-align: center;
+  border-bottom: 1px solid #1890ff;
+  padding-bottom: 10px;
+  color: #1890ff;
 }

@@ -17,14 +17,23 @@ import 'markdown-navbar/dist/navbar.css';
 
 
 import { marked } from 'marked';
-import hljs from 'highlight';
-// import 'highlight.js/styles/monokai-sublime.css';
-import 'highlight/lib/vendor/highlight.js/styles/default.css';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/monokai-sublime.css';
+// import 'highlight.js/lib/vendor/highlight.js/styles/default.css';
 
 // import TestMarkdowm from '../public/TestMarkdowm.md'
 
+const renderer = new marked.Renderer();
+
+const tocify = new Tocify()
+renderer.heading = function (text, level, raw) {
+  const anchor = tocify.add(text, level);
+  return `<a id="${anchor}" href="#${anchor}" class="anchor-fix"><h${level}>${text}</h${level}></a>\n`;
+};
+
+
 marked.setOptions({
-  renderer: new marked.Renderer(), // renderer: 这个是必须填写的，你可以通过自定义的Renderer渲染出自定义的格式
+  renderer, // renderer: 这个是必须填写的，你可以通过自定义的Renderer渲染出自定义的格式
   gfm: true,       // gfm：启动类似Github样式的Markdown,填写true或者false
   pedantic: false, // pedatic：只解析符合Markdown定义的，不修正Markdown的错误。填写true或者false
   sanitize: false, //sanitize: 原始输出，忽略HTML标签，这个作为一个开发人员，一定要写flase
@@ -33,28 +42,15 @@ marked.setOptions({
   smartLists: true,// smartLists：优化列表输出，这个填写ture之后，你的样式会好看很多，所以建议设置成ture
   smartypants: false, // smartLists：优化列表输出，这个填写ture之后，你的样式会好看很多，所以建议设置成ture
   // highlight: 高亮显示规则 ，这里我们将使用highlight.js来完成
-  // highlight: function (code) {
-  //   return hljs.highlightAuto(code).value;
-  // }
+  highlight: function (code) {
+    return hljs.highlightAuto(code).value;
+  }
 
 });
-
-const tocify = new Tocify()
-new marked.Renderer().heading = function (text, level, raw) {
-  const anchor = tocify.add(text, level);
-  return `<a id="${anchor}" href="#${anchor}" class="anchor-fix"><h${level}>${text}</h${level}></a>\n`;
-};
 
 const Detail = (datail) => {
 
   console.log("detail:", datail)
-
-  const renderer = new marked.Renderer();
-
-
-
-  // const renderer = new marked.Renderer();
-
 
   // let html = marked(<div>sfsfsfsf</div>)
   let html = marked(datail.content)
@@ -97,8 +93,10 @@ const Detail = (datail) => {
           <Advert />
 
           <Affix offsetTop={5}>
+            <div className="gzh-div">
+              <div className="gzh-title">文章目录</div>
+            </div>
             <div className="detailed-nav comm-box">
-              <div className="nav-title">文章目录</div>
               <div className="toc-list">
                 {tocify && tocify.render()}
               </div>
