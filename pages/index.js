@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import servicePath from '../config/apiUrl';
 import Head from 'next/head';
 import { Button, Row, Col, Breadcrumb } from 'antd';
 // import Header from '../components/Header';
@@ -12,14 +13,17 @@ import MyList from '../components/MyList';
 
 
 
-const Home = (list) => {
-  console.log("list:", list)
+const Home = (list, { match }) => {
+  console.log("list:", list, )
+  console.log("match:", match, )
+
 
   return (<div>
     <Row className="comm-main" type="flex" justify="center">
       <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}  >
 
         <MyList data={list.data} />
+        {/* <MyList /> */}
 
 
       </Col>
@@ -35,22 +39,24 @@ const Home = (list) => {
 
 
 
-
-
-
-
-
-
-
-
-Home.getInitialProps = async () => {
+Home.getInitialProps = async (context) => {
+  console.log('远程获取数据结果:', context)
   const promise = new Promise((resolve) => {
-    axios('http://127.0.0.1:7001/default/getArticleList').then(
+    // const id = context.query.id || 
+    // console.log('context.query.id:', context.query.id)
+    // axios(servicePath.getArticleListById + id).then(
+    //   (res) => {
+    //     console.log('远程获取数据结果:', res.data.data)
+    //     resolve(res.data)
+    //   }
+    // )
+    axios(servicePath.getArticleList).then(
       (res) => {
         console.log('远程获取数据结果:', res.data.data)
         resolve(res.data)
       }
     )
+    
   })
 
   return await promise

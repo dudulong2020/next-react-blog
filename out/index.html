@@ -1,1 +1,589 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="preload" href="/next-react-blog/_next/static/css/9f5962b7.e0e7a35c.chunk.css" as="style"/><link rel="stylesheet" href="/next-react-blog/_next/static/css/9f5962b7.e0e7a35c.chunk.css" data-n-g=""/><link rel="preload" href="/next-react-blog/_next/static/css/styles.3b310ef7.chunk.css" as="style"/><link rel="stylesheet" href="/next-react-blog/_next/static/css/styles.3b310ef7.chunk.css" data-n-g=""/><noscript data-n-css="true"></noscript><link rel="preload" href="/next-react-blog/_next/static/chunks/main-dc3d0b8443e114b4e16e.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/webpack-22eaaa575d3c455933b4.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/framework.c0a3c3781383166828ef.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/9f5962b7.d6f2610c02ca1f2f8023.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/commons.5f53bed194f83057eba5.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/b1e31483b7ea8e4bab68f559cc18359a9ec375ab.af6e2c22d9f02d81c50e.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/70fffa4e6ba304d9c92350615ffb5e08ca3f8cb5.4d58bd605b463c9021e4.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/styles.ddedc3d4e27253a52fdc.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/pages/_app-ec5ad5caa810e94e304f.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/dad3b0f0e499a07bb4975f41207502b178a4bed7.b1652b46ffff4f04991d.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/5e7ada1cf523d3c9a8439b1676a96e72a4fd510f.2b2652cecf1933dc6508.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/pages/index-3ef21d07f47317bf9406.js" as="script"/></head><body><div id="__next"><div class="header"><div type="flex" class="ant-row ant-row-center"><div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-10 ant-col-lg-10 ant-col-xl-10"><span class="header-logo">技术博客123456</span><span class="header-txt">Single Shared Layout with Custom App</span></div><div class="ant-col memu-div ant-col-xs-0 ant-col-sm-0 ant-col-md-14 ant-col-lg-8 ant-col-xl-6"><ul class="ant-menu-overflow ant-menu ant-menu-root ant-menu-horizontal ant-menu-light" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-overflow-item ant-menu-item" style="opacity:1;order:0" role="menuitem" tabindex="-1"><span role="img" aria-label="appstore" class="anticon anticon-appstore ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="appstore" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 144H160c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16zm-52 268H212V212h200v200zm452-268H560c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16zm-52 268H612V212h200v200zM464 544H160c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V560c0-8.8-7.2-16-16-16zm-52 268H212V612h200v200zm452-268H560c-8.8 0-16 7.2-16 16v304c0 8.8 7.2 16 16 16h304c8.8 0 16-7.2 16-16V560c0-8.8-7.2-16-16-16zm-52 268H612V612h200v200z"></path></svg></span><span class="ant-menu-title-content"><a href="/">首页111</a></span></li><li class="ant-menu-overflow-item ant-menu-item" style="opacity:1;order:1" role="menuitem" tabindex="-1"><span role="img" aria-label="youtube" class="anticon anticon-youtube ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="youtube" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M960 509.2c0-2.2 0-4.7-.1-7.6-.1-8.1-.3-17.2-.5-26.9-.8-27.9-2.2-55.7-4.4-81.9-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 00-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2-37.1-1.4-76.8-2.3-116.5-2.8-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4-39.7.5-79.4 1.4-116.5 2.8-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0082.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9-.3 9.7-.4 18.8-.5 26.9 0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6.1 8.1.3 17.2.5 26.9.8 27.9 2.2 55.7 4.4 81.9 3 36.1 7.4 66.2 13.4 88.8 12.8 47.9 50.4 85.7 98.3 98.5 28.2 7.6 83.7 12.3 161.7 15.2 37.1 1.4 76.8 2.3 116.5 2.8 13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4 39.7-.5 79.4-1.4 116.5-2.8 78-3 133.5-7.7 161.7-15.2 47.9-12.8 85.5-50.5 98.3-98.5 6.1-22.6 10.4-52.7 13.4-88.8 2.2-26.2 3.6-54 4.4-81.9.3-9.7.4-18.8.5-26.9 0-2.9.1-5.4.1-7.6v-5.6zm-72 5.2c0 2.1 0 4.4-.1 7.1-.1 7.8-.3 16.4-.5 25.7-.7 26.6-2.1 53.2-4.2 77.9-2.7 32.2-6.5 58.6-11.2 76.3-6.2 23.1-24.4 41.4-47.4 47.5-21 5.6-73.9 10.1-145.8 12.8-36.4 1.4-75.6 2.3-114.7 2.8-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8-71.9-2.8-124.9-7.2-145.8-12.8-23-6.2-41.2-24.4-47.4-47.5-4.7-17.7-8.5-44.1-11.2-76.3-2.1-24.7-3.4-51.3-4.2-77.9-.3-9.3-.4-18-.5-25.7 0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1.1-7.8.3-16.4.5-25.7.7-26.6 2.1-53.2 4.2-77.9 2.7-32.2 6.5-58.6 11.2-76.3 6.2-23.1 24.4-41.4 47.4-47.5 21-5.6 73.9-10.1 145.8-12.8 36.4-1.4 75.6-2.3 114.7-2.8 13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8 71.9 2.8 124.9 7.2 145.8 12.8 23 6.2 41.2 24.4 47.4 47.5 4.7 17.7 8.5 44.1 11.2 76.3 2.1 24.7 3.4 51.3 4.2 77.9.3 9.3.4 18 .5 25.7 0 2.7.1 5.1.1 7.1v4.8zM423 646l232-135-232-133z"></path></svg></span><span class="ant-menu-title-content"><a href="/list">视频222</a></span></li><li class="ant-menu-overflow-item ant-menu-item" style="opacity:1;order:2" role="menuitem" tabindex="-1"><span role="img" aria-label="smile" class="anticon anticon-smile ant-menu-item-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="smile" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M288 421a48 48 0 1096 0 48 48 0 10-96 0zm352 0a48 48 0 1096 0 48 48 0 10-96 0zM512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm263 711c-34.2 34.2-74 61-118.3 79.8C611 874.2 562.3 884 512 884c-50.3 0-99-9.8-144.8-29.2A370.4 370.4 0 01248.9 775c-34.2-34.2-61-74-79.8-118.3C149.8 611 140 562.3 140 512s9.8-99 29.2-144.8A370.4 370.4 0 01249 248.9c34.2-34.2 74-61 118.3-79.8C413 149.8 461.7 140 512 140c50.3 0 99 9.8 144.8 29.2A370.4 370.4 0 01775.1 249c34.2 34.2 61 74 79.8 118.3C874.2 413 884 461.7 884 512s-9.8 99-29.2 144.8A368.89 368.89 0 01775 775zM664 533h-48.1c-4.2 0-7.8 3.2-8.1 7.4C604 589.9 562.5 629 512 629s-92.1-39.1-95.8-88.6c-.3-4.2-3.9-7.4-8.1-7.4H360a8 8 0 00-8 8.4c4.4 84.3 74.5 151.6 160 151.6s155.6-67.3 160-151.6a8 8 0 00-8-8.4z"></path></svg></span><span class="ant-menu-title-content"><a href="/detail">详情333</a></span></li><li class="ant-menu-overflow-item ant-menu-overflow-item-rest ant-menu-submenu ant-menu-submenu-horizontal" style="opacity:0;height:0;overflow-y:hidden;order:9007199254740991;pointer-events:none;position:absolute" aria-hidden="true" role="none"><div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true"><span role="img" aria-label="ellipsis" class="anticon anticon-ellipsis"><svg viewBox="64 64 896 896" focusable="false" data-icon="ellipsis" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"></path></svg></span><i class="ant-menu-submenu-arrow"></i></div></li></ul><div style="display:none" aria-hidden="true"></div></div></div></div><main><div><div type="flex" class="ant-row ant-row-center comm-main"><div class="ant-col comm-left ant-col-xs-24 ant-col-sm-24 ant-col-md-16 ant-col-lg-18 ant-col-xl-14"><div class="ant-list ant-list-vertical ant-list-split"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><ul class="ant-list-items"><li class="ant-list-item ant-list-item-no-flex"><div class="list-title">使用redux-devtools工具 </div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2019-06-28</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>视频教程</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>5498人</span></div><div class="list-context">在vue中型项目开发的过程中，一般都是要用到vuex这个状态管理工具的，这样可以方便我们管理全局的状态，同时，为了在开发的过程中，更加方便地实时查看到state状态，我们会使用 vue-devtool 工具，这样就可以在浏览器中实时看到 state 的变化以及触发的 mutations 等等。在react的开发过程中也是如此，redux类似于vue中的vuex，也是状态管理工具，同样，为了实时观察（而不是讨厌的console.log()），我们一般都会选择使用redux-devtools工具来进行使用了redux项目的开发。 </div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title">舍伍德·安德森的小说《鸡蛋》</div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2019-06-28</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>视频教程</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>5498人</span></div><div class="list-context">小说是用一个孩子的视角叙述的，讲的是他父亲的故事。父亲是俄亥俄州的一个农民，一直以种地为生。但是有了孩子以后，父亲和母亲决定为了孩子将来有出息，必须做一些&quot;ambitious&quot;的事情，不能再当农民了。父亲先开了一个养鸡场，但是没有成功。于是，全家搬到几英里以外的一个小镇上，改为开餐馆，最终也没有成功。小说讲的就是这样一个故事。小说的前半部分是一个农村家庭苦难的奋斗史，后半部则是写作者的父亲企图用一个鸡蛋取悦他的客人，但是遭到失败。在这里，那只鸡蛋实际上象征着命运和人生。作者的父亲企图改变命运，就像他企图征服那只鸡蛋那样。但是最终还是要失败，遭到他人的耻笑和命运无情的打击。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title">《万物简史》（A Short History Of Nearly Everything）是一本难得的科普佳作。</div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2019-06-28</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>视频教程</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>5498人</span></div><div class="list-context">本书2003年5月在美国出版后，连续数十周高居《纽约时报》、《泰晤士报》排行榜最前列，荣登亚马逊网站2003年度十大畅销书之列，在年度科学类图书排行榜中，本书更是勇夺桂冠。2004年初，被美国《科学》杂志评选为2003年度最佳科学著作之一。2004年6月，又一举夺得了由英国皇家学会颁布的世界最著名的科普图书大奖----安万特（Aventis）奖。我用过的教科书全都出自那些怀有一种挺有意思的想法的男人（始终都是男人）的笔下，美国的孩子们会喜欢各个章节的结尾都带有问题部分，供他们在自己的时代冥思苦想。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title">威廉·布莱克《从一颗沙子看世界》</div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2019-06-28</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>视频教程</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>5498人</span></div><div class="list-context">主要是很少从国外诗中看到禅意，我比较喜欢宗白桦先生所译的。但翻译过来之后还是跟禅宗偈子意境查多了，如果大家有兴趣可以查一下指月录，华严经合论等等的意境和语言也是非常美的。十世古今始终不离于当念无边刹境自他不隔于毫端。布莱克本人是出名的，只是这首诗在欧美不出名。最后一版的现代文笔比较优美，但是有些扭曲了含义。而且本人觉得可以润色一下：一颗沙里看出一个世界.一朵花里窥见一座天堂.把无限放在你的掌心.把永恒在一刹那收藏.第一个版本和宗白华的译文精辟，而且符合原文。指月录的确有不少人生的智慧。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title">关于幸福，你知道多少（上）</div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2019-06-28</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>视频教程</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>5498人</span></div><div class="list-context">People see love as the key to happiness. Those who love and are loved in return are happier than others. Great prosperity, a high-status job, health, personal attractiveness, marriage, even sex -- none of these make up for a lack of love. &quot;You can be happy without a good sex life, and you can have a good sex life and be unhappy.&quot; Freedman point out, though sex is an important element in happiness for most people.很同意这个结论，我觉得有回应的爱情是幸福的充分条件，甚至是第一位的。没有爱情，怎么都不可能是幸福的。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title">关于幸福，你知道多少（下）</div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2019-06-28</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>视频教程</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>5498人</span></div><div class="list-context">A large part of the influence of money and education on happiness derives from one original expectations. If you thought youd earn a lot, and did, you may have a so what? attitude. But if your expectations have been overfulfilled, the happiness that comes from getting more than you thought you would get can be quite pronounced. The happiness that comes from getting more than you thought you would get can be quite pronounced. The happiest groups were those with little education who earned a lot; while the highly educated who earned a lot were not so well off psychologically.幸福与期望有关，受过的教育越高，幸福的机会越小，不知道是不是这样？</div></li></ul></div></div></div></div><div class="ant-col comm-right ant-col-xs-0 ant-col-sm-0 ant-col-md-7 ant-col-lg-5 ant-col-xl-4"><div class="author-div comm-box"><div> <span style="width:100px;height:100px;line-height:100px;font-size:18px" class="ant-avatar ant-avatar-circle ant-avatar-image"><img src="../public/maomao.jpeg"/></span></div><div class="author-introduction">上次入门完了以后感受意犹未尽，总以为这个脚手架仍是不太完美，还有能够改进的地方，<div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center" role="separator"><span class="ant-divider-inner-text">社交账号</span></div><span style="width:28px;height:28px;line-height:28px;font-size:14px" class="ant-avatar ant-avatar-circle ant-avatar-icon account"><span role="img" aria-label="github" class="anticon anticon-github"><svg viewBox="64 64 896 896" focusable="false" data-icon="github" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></span></span><span style="width:28px;height:28px;line-height:28px;font-size:14px" class="ant-avatar ant-avatar-circle ant-avatar-icon account"><span role="img" aria-label="qq" class="anticon anticon-qq"><svg viewBox="64 64 896 896" focusable="false" data-icon="qq" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z"></path></svg></span></span><span style="width:28px;height:28px;line-height:28px;font-size:14px" class="ant-avatar ant-avatar-circle ant-avatar-icon account"><span role="img" aria-label="wechat" class="anticon anticon-wechat"><svg viewBox="64 64 896 896" focusable="false" data-icon="wechat" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M690.1 377.4c5.9 0 11.8.2 17.6.5-24.4-128.7-158.3-227.1-319.9-227.1C209 150.8 64 271.4 64 420.2c0 81.1 43.6 154.2 111.9 203.6a21.5 21.5 0 019.1 17.6c0 2.4-.5 4.6-1.1 6.9-5.5 20.3-14.2 52.8-14.6 54.3-.7 2.6-1.7 5.2-1.7 7.9 0 5.9 4.8 10.8 10.8 10.8 2.3 0 4.2-.9 6.2-2l70.9-40.9c5.3-3.1 11-5 17.2-5 3.2 0 6.4.5 9.5 1.4 33.1 9.5 68.8 14.8 105.7 14.8 6 0 11.9-.1 17.8-.4-7.1-21-10.9-43.1-10.9-66 0-135.8 132.2-245.8 295.3-245.8zm-194.3-86.5c23.8 0 43.2 19.3 43.2 43.1s-19.3 43.1-43.2 43.1c-23.8 0-43.2-19.3-43.2-43.1s19.4-43.1 43.2-43.1zm-215.9 86.2c-23.8 0-43.2-19.3-43.2-43.1s19.3-43.1 43.2-43.1 43.2 19.3 43.2 43.1-19.4 43.1-43.2 43.1zm586.8 415.6c56.9-41.2 93.2-102 93.2-169.7 0-124-120.8-224.5-269.9-224.5-149 0-269.9 100.5-269.9 224.5S540.9 847.5 690 847.5c30.8 0 60.6-4.4 88.1-12.3 2.6-.8 5.2-1.2 7.9-1.2 5.2 0 9.9 1.6 14.3 4.1l59.1 34c1.7 1 3.3 1.7 5.2 1.7a9 9 0 006.4-2.6 9 9 0 002.6-6.4c0-2.2-.9-4.4-1.4-6.6-.3-1.2-7.6-28.3-12.2-45.3-.5-1.9-.9-3.8-.9-5.7.1-5.9 3.1-11.2 7.6-14.5zM600.2 587.2c-19.9 0-36-16.1-36-35.9 0-19.8 16.1-35.9 36-35.9s36 16.1 36 35.9c0 19.8-16.2 35.9-36 35.9zm179.9 0c-19.9 0-36-16.1-36-35.9 0-19.8 16.1-35.9 36-35.9s36 16.1 36 35.9a36.08 36.08 0 01-36 35.9z"></path></svg></span></span></div></div><div class="ad-div comm-box"><div><img src="http://blogimages.jspang.com/flutter_ad2.jpg" width="100%"/></div><div><img src="http://blogimages.jspang.com/Vue_koa_ad1.jpg" width="100%"/></div><div><img src="http://blogimages.jspang.com/WechatIMG12.jpeg" width="100%"/></div></div></div></div></div></main><div class="footer-div"><div>系统由 React+Node+Ant Desgin驱动 </div><div>JSPang.com</div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"rgg8qf4Zur7rzQO5iO_51","assetPrefix":"/next-react-blog","runtimeConfig":{"linkPrefix":"/next-react-blog/"},"nextExport":true,"autoExport":true,"isFallback":false,"head":[["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"width=device-width"}]]}</script><script nomodule="" src="/next-react-blog/_next/static/chunks/polyfills-f45e75cb8fe5039fd439.js"></script><script src="/next-react-blog/_next/static/chunks/main-dc3d0b8443e114b4e16e.js" async=""></script><script src="/next-react-blog/_next/static/chunks/webpack-22eaaa575d3c455933b4.js" async=""></script><script src="/next-react-blog/_next/static/chunks/framework.c0a3c3781383166828ef.js" async=""></script><script src="/next-react-blog/_next/static/chunks/9f5962b7.d6f2610c02ca1f2f8023.js" async=""></script><script src="/next-react-blog/_next/static/chunks/commons.5f53bed194f83057eba5.js" async=""></script><script src="/next-react-blog/_next/static/chunks/b1e31483b7ea8e4bab68f559cc18359a9ec375ab.af6e2c22d9f02d81c50e.js" async=""></script><script src="/next-react-blog/_next/static/chunks/70fffa4e6ba304d9c92350615ffb5e08ca3f8cb5.4d58bd605b463c9021e4.js" async=""></script><script src="/next-react-blog/_next/static/chunks/styles.ddedc3d4e27253a52fdc.js" async=""></script><script src="/next-react-blog/_next/static/chunks/pages/_app-ec5ad5caa810e94e304f.js" async=""></script><script src="/next-react-blog/_next/static/chunks/dad3b0f0e499a07bb4975f41207502b178a4bed7.b1652b46ffff4f04991d.js" async=""></script><script src="/next-react-blog/_next/static/chunks/5e7ada1cf523d3c9a8439b1676a96e72a4fd510f.2b2652cecf1933dc6508.js" async=""></script><script src="/next-react-blog/_next/static/chunks/pages/index-3ef21d07f47317bf9406.js" async=""></script><script src="/next-react-blog/_next/static/rgg8qf4Zur7rzQO5iO_51/_buildManifest.js" async=""></script><script src="/next-react-blog/_next/static/rgg8qf4Zur7rzQO5iO_51/_ssgManifest.js" async=""></script></body></html>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="preload" href="/next-react-blog/_next/static/css/9f5962b7.fe544dc9.chunk.css" as="style"/><link rel="stylesheet" href="/next-react-blog/_next/static/css/9f5962b7.fe544dc9.chunk.css" data-n-g=""/><link rel="preload" href="/next-react-blog/_next/static/css/styles.09e5a7ed.chunk.css" as="style"/><link rel="stylesheet" href="/next-react-blog/_next/static/css/styles.09e5a7ed.chunk.css" data-n-g=""/><noscript data-n-css="true"></noscript><link rel="preload" href="/next-react-blog/_next/static/chunks/main-12f6dac265bc3318ef89.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/webpack-22eaaa575d3c455933b4.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/framework.c0a3c3781383166828ef.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/9f5962b7.33fae6201fee986d0584.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/commons.5f53bed194f83057eba5.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/b1e31483b7ea8e4bab68f559cc18359a9ec375ab.54c63b8b6b512e1d0a9d.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/70fffa4e6ba304d9c92350615ffb5e08ca3f8cb5.4d58bd605b463c9021e4.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/ccff254959233db746e065d15c670f967a70a969.e5fba008d11d537ee2ba.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/styles.c20533633de976124fa6.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/pages/_app-f00bce3bd4aea5c47ef3.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/dad3b0f0e499a07bb4975f41207502b178a4bed7.9f271777242f13e55cea.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/5e7ada1cf523d3c9a8439b1676a96e72a4fd510f.d688be49c21fd0dfd981.js" as="script"/><link rel="preload" href="/next-react-blog/_next/static/chunks/pages/index-ce85c06de218243842f8.js" as="script"/></head><body><div id="__next"><div class="header"><div type="flex" class="ant-row ant-row-center"><div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-14 ant-col-lg-14 ant-col-xl-12"><span class="header-logo">技术博客123456</span><span class="header-txt">Single Shared Layout with Custom App</span></div><div class="ant-col memu-div ant-col-xs-0 ant-col-sm-0 ant-col-md-10 ant-col-lg-10 ant-col-xl-6"><ul class="ant-menu-overflow ant-menu ant-menu-root ant-menu-horizontal ant-menu-light" role="menu" tabindex="0" data-menu-list="true"><li class="ant-menu-overflow-item ant-menu-item" style="opacity:1;order:0" role="menuitem" tabindex="-1"><span class="ant-menu-title-content"><svg class="icon "></svg> 首页</span></li><li class="ant-menu-overflow-item ant-menu-overflow-item-rest ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-disabled" style="opacity:0;height:0;overflow-y:hidden;order:9007199254740991;pointer-events:none;position:absolute" aria-hidden="true" role="none"><div role="menuitem" class="ant-menu-submenu-title" aria-expanded="false" aria-haspopup="true" aria-disabled="true"><span role="img" aria-label="ellipsis" class="anticon anticon-ellipsis"><svg viewBox="64 64 896 896" focusable="false" data-icon="ellipsis" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"></path></svg></span><i class="ant-menu-submenu-arrow"></i></div></li></ul><div style="display:none" aria-hidden="true"></div></div></div></div><main><div><div type="flex" class="ant-row ant-row-center comm-main"><div class="ant-col comm-left ant-col-xs-24 ant-col-sm-24 ant-col-md-16 ant-col-lg-18 ant-col-xl-14"><div class="ant-list ant-list-vertical ant-list-split"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><ul class="ant-list-items"><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=1">各路厂商花式入局，打开元宇宙的正确方式究竟是？</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-05T16:00:00.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>6</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>99</span></div><div class="list-context">2021年被外界称为元宇宙元年。
+
+作为近几个月来最为火热的话题，元宇宙似乎夹带了流量密码，只要与元宇宙沾边的，都迅速获得大众关注。
+
+手机厂商小米也乘上这一风头，近期回应，在元宇宙方面正积极布局。近日，悄悄投资了VR公司当红齐天。事实上，这也是小米继今年10月后第二次对其进行投资。能够看出来，小米正以更多元化的姿态入局元宇宙。
+
+在元宇宙布局的浪潮中，小米只是其中一个缩影，还有如腾讯、Meta、网易、百度这样的互联网大企加入，手机行业的华为、苹果等加塞入局，都以不同的“姿态”演绎它们入局的方式。那么，在这些玩家不断布局的形势下，元宇宙究竟走到了哪一步？
+
+“花式”走进元宇宙
+天眼查数据显示，截至目前11月26日，有超过960多家公司参与申请名称中含“元宇宙”的商标申请总量近6400条。值得注意的是，在10月22日之前，申请元宇宙商标的企业才为400家左右。也就是说，仅在这一个月中，申请的企业数量呈翻倍增长。蹭着这一风口，企业们都蜂拥而上。
+
+那么，受无数企业追捧的元宇宙到底是什么？
+
+据了解，元宇宙（Metaverse）的概念最早可追溯到出版于1992年美国作家尼尔·斯蒂芬森创作的科幻小说《雪崩》（Snow Crash）中。书中，斯蒂芬森描绘了一个超现实主义的数字空间“Metaverse”，为地理空间所阻隔的人们可通过各自“化身”（avatar）相互交往，度过闲暇时光，还可随意支配自己的收入。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=2">秦时明月，“国漫之光”只剩黯淡</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-06T04:39:27.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>3</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>199</span></div><div class="list-context">这些说辞没有被粉丝买账。该回答的评论区但凡出现支持者，便有“有钱一起赚”之类讥讽对方是水军的回复。而紧跟其后的高赞回答，则不乏观众带着爱之深责之切的情绪，怒斥“把秦时IP糟蹋成这样不该反思吗”。 
+
+过去的玄机科技是业界“异类”，“整整十年时间只做一部作品秦时明月”。在公司的官网上，对《秦时明月》的描述是“华语动漫巅峰力作”，它在相当长的时间里承载着“国漫之光”的期盼，前四部豆瓣评分均在9分以上。 
+
+然而第六部《沧海横流》播出后，口碑断崖下跌至5.4。六年时间，一部续作，让《秦时明月》离“国漫之光”越来越远。 
+
+国漫的空白，谁来填
+用沈乐平的话说，国产动画经历过“失去的十年”。 
+
+《黑猫警长》《葫芦兄弟》等作品曾辉煌一时，上海美术电影制片厂所引领的“中国学派”在世界范围内具备一定影响力，但从约1995年起，日、美动画以免费战略向国内“倾销”，在沈乐平的记忆中，日、美动画公司资金雄厚，不仅不收放映费，还常给电视台倒贴广告。国产动画由此开始走下坡路，不少企业转向代工，技术逐渐落后，一代人的童年与青春也跟日、美动画绑定着。 
+环境到2005年左右产生转变，国家有关部门开始颁发一系列扶持动漫产业的重要文件，涉及资金、税收、电视台播放等多个方面，短短几年内国产动画的产量明显提升。2008年，广电总局规定“全国各级电视台所有频道不得在17：00-21：00播出境外动画片”，基本给电视时代的动画之争划上了句号。
+《秦时明月》正是这段时期内的产物。 33岁的沈乐平在2005年创办玄机科技，其注册地杭州的补贴额度并非最高，地方政府的方式是不分二维三维，每分钟1000元，南京、郑州等城市则可达3-4倍，在政策利好、资本过热的背景下，不乏鱼目混珠的劣质动画，“蓬勃鼎盛时有几千家公司，留下来的不到5％，玄机是那一波的幸存者”，更是“优胜者”。 </div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=3">git添加、删除远程仓库</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-07T08:27:31.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1999</span></div><div class="list-context">[TOC]
+
+https://blog.csdn.net/zhezhebie/article/details/78761417
+
+## 1、仓库
+### 1.仓库路径查询查询：
+
+```
+git remote -v
+```
+### 2.添加远程仓库：
+
+```
+git remote add origin &lt;你的项目地址&gt; //注:项目地址形式为:https://gitee.com/xxx/xxx.git或者 git@gitee.com:xxx/xxx.git
+
+```
+
+### 3.删除指定的远程：
+
+```
+git remote rm origin
+
+```
+
+## 2、本地初始化一个项目
+ 
+&gt; 首先，你需要执行下面两条命令，作为 git 的基础配置，作用是告诉 git 你是谁，你输入的信息将出现在你创建的提交中。
+
+
+```
+git config --global user.name &quot;你的名字或昵称&quot;
+git config --global user.email &quot;你的邮箱&quot;
+```
+
+ 
+&gt;  然后在你的需要初始化版本库的文件夹中执行：
+
+```
+git init 
+git remote add origin &lt;你的项目地址&gt; //注:项目地址形式
+```
+&gt; 为:http://git.oschina.net/xxx/xxx.git或者 git@git.oschina.net:xxx/xxx.git
+这样就完成了一次版本你的初始化。
+
+&gt; 如果你想克隆一个项目，只需要执行：
+
+```
+git clone &lt;项目地址&gt;
+```
+
+## 3、完成第一次提交
+
+&gt; 进入你已经初始化好的或者克隆项目的目录，然后执行：
+
+
+```
+git pull origin master
+```
+
+
+&gt; &lt;这里需要修改/添加文件，否则与原文件相比就没有变动&gt;
+
+
+```
+git add .
+git commit -m &quot;第一次提交&quot;
+git push origin master
+```
+&gt; 然后如果需要账号密码的话就输入账号密码，这样就完成了一次提交。
+
+&gt; 此时，你可以在你的个人面板、项目主页查看到你的提交记录，例如：http://git.oschina.net/oschina/git-osc/commit/f3dd1c5bae48fa4244e2595a39e750e5606dd9be
+
+&gt; 按照本文档新建的项目时，在码云平台仓库上已经存在 readme 文件，故在提交时可能会存在冲突，这时您需要选择的是保留线上的文件或者舍弃线上的文件，如果您舍弃线上的文件，则在推送时选择强制推送，强制推送需要执行下面的命令：
+
+
+```
+git push origin master -f
+```
+
+&gt; 如果您选择保留线上的 readme 文件，则需要先执行：
+
+
+```
+git pull origin master
+```
+
+&gt; 修改gitignore之后所作的操作：
+
+```
+git rm --cached .gitignore
+git add .gitignore
+git commit -m &#x27;update .gitignore&#x27;
+```
+
+&gt; 使用远程代码强制覆盖本地代码：
+
+```
+git fetch --all
+git reset --hard origin/master
+```
+
+
+## 4、【Git】Updates were rejected because the tip of your current branch is behind
+
+https://blog.csdn.net/zhangkui0418/article/details/82977519
+
+```
+刚创建的github版本库，在push代码时遇到以上错误：
+
+有如下几种解决方法：
+
+        1，push前先将远程repository修改pull下来
+
+        $ git pull origin master
+
+        $ git push -u origin master
+
+        2，使用强制push的方法：
+
+        $ git push -u origin master -f 
+
+        这样会使远程修改丢失，一般是不可取的，尤其是多人协作开发的时候。
+
+        3，若不想merge远程和本地修改，可以先创建新的分支：
+
+        $ git branch [name]
+
+        然后push
+
+        $ git push -u origin [name]
+
+在解决问题中遇到的几个问题：
+
+        1，git pull 提示refusing to merge unrelated histories
+
+        是因为两端在做完全不同的提交
+
+        解决方法：git pull --allow-unrelated-histories
+
+        2，git pull 报错:There is no tracking information for the current branch
+```
+</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=4">Windows11 中安装Linux 教程 | WSL2的使用</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-07T09:46:41.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>2999</span></div><div class="list-context">
+Windows11 中安装Linux 教程 | WSL2的使用
+
+作为一个程序员在开发中会经常使用Linux环境进行开发，但并不是每个程序员都能拥有一台自己的苹果笔记本电脑的。毕竟苹果的价格还是比Windows电脑贵很多的。
+
+其实在的Windows10以上的系统是完全可以使用Linux开发环境的，这个救命稻草就是`WSL2`。这个教程，我们就详细讲解一下Win11下，如何使用`WSL2- Windows Subsystem for Linux`。
+
+## BIOS中开启虚拟化
+
+第一步是打开主板BIOS的虚拟化选项，如果你是这几年新买的电脑，默认这项是打开的。注意这一项每个电脑主板型号的不同，设置的方法也不同。所以最好的方法，是你根据自己主板的型号，去百度或者Google去搜索一下开启虚拟话的方法。
+
+![BIOS开启虚拟化](https://newimg.jspang.com/Docker2_1_BIOS.jpg)
+
+
+- Windows平台 ：Intel（VMX）Virtuallzation  Technology  需要到主板中进行开启
+- AMD平台：AMD-V
+
+## WSL的两个版本和安装要求
+
+- WSL ：也就是我们常说WSL1，第一个版本，对windows的版本要求较低
+- WSL2：第二个版本，要求WIN10版本高于1903
+
+至于两个版本的区别不是教程的重点，就不做过多的介绍了。
+
+## WSL2安装过程
+
+Microsoft英文版文档网址：[https://docs.microsoft.com/en-us/windows/wsl/install-manual](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
+
+- **第一步**：启动WSL。用管理员身份打开`PowerShell`.(打开方法见视频)，然后在PowerShell中，输入下面的命令。
+
+```jsx
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+
+- **第二步**：启动虚拟机给功能。同样在PoweShell中输入下面的命令。输入完命令后，要重启一下电脑，然后再进行第三步。
+
+```jsx
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+- **第三步**：下载Linux内核更新包。
+
+&gt; 下载地址：[https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+&gt; 
+
+- **第四步**：将WSL2设置为默认版本。打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本，命令如下。
+
+```jsx
+wsl --set-default-version 2
+```
+
+第四步安装完成后，你就可以去安装对应的Linux发行版了，这里我们拿Ubuntu举例。
+
+## 安装Ubuntu发行版
+
+打开`Microsoft Store`，并选择你偏好的Linux分发版。我这里选择`Ubuntu`并进行安装。下载时间会根据网络不同，时间不同。我家的网络安装还是比较慢的。
+
+安装完成后，就可以使用了。如果是首次进入，需要你设置用户名和密码。当进入系统后，可以使用下面的命令来查看当前Ubuntu的版本。
+
+```jsx
+lsb_release -a
+```
+
+输入完命令后，就可以看到版本信息了。至此WSL2的安装过程就演示完成了，希望本视频对你有所帮助。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=5">babel-loader实现</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-09T06:19:30.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1010</span></div><div class="list-context">[链接地址](https://www.jianshu.com/p/297e838b104e)
+&gt; 首先安装“@babel/core”（babel核心模块）和“@babel/preset-env”，因为我要实现“babel-loader”，所以这里就不装loader了
+
+
+```
+//webpack.config.js
+module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: &quot;babel-loader&quot;,   // 这个loader使我们自己写的，不引用官方的
+          options: {
+            presets: [&quot;@babel/preset-env&quot;]   // 转换规则
+          }
+        }
+      }
+    ]
+  }
+//loader文件夹下新建babel-loader.js文件
+let babel = require(&#x27;@babel/core&#x27;);  // 引入babel核心块
+function loader(source) {
+  return source
+}
+module.exports = loader;
+```
+
+==@babel/core==是babel的核心模块，编译器。提供转换的API。
+以上babel-loader.js中，我已经引入了babel/core，然后我们需要告诉webpack，要以什么规则（方式）转换我们的js文件，es-2015，stage-2，env...。可以看到webpack配置文件中，我已经给了presets-env，那么我们需要在babel-loader.js中引入这个预设规则。引入规则的前提，需要安装包==loader-utils==(用来拿传递的参数)</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=6">（mac）node升级或版本切换方法</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-09T06:49:09.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1035</span></div><div class="list-context">#### 1、首先安装n模块：
+
+```
+sudo npm install -g n
+```
+
+#### 2、升级node.js到最新稳定版
+
+```
+sudo n stable
+```
+
+#### 3、升级到最新版
+
+```
+sudo n latest
+```
+
+#### 4、n后面也可以跟随版本号,升级到任意版本
+
+```
+sudo n v0.10.26或sudo n 0.10.26
+```
+
+#### 5、切换使用版本
+
+```
+sudo n 7.10.0
+```
+
+#### 6、删除制定版本
+
+```
+sudo n rm 7.10.0
+```
+
+#### 7、用制定的版本执行脚本
+
+```
+n use 7.10.0 some.js
+```
+
+#### 8、sudo n
+&gt; 可以查看所有已安装的node版本，可以根据上下和回车选择要使用的版本
+
+</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=7">gparted+Centos7使用LVM扩容磁盘</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-09T06:57:09.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1078</span></div><div class="list-context">### 1. gparted
+
+VMware虚拟机 Linux系统 Ubuntu 16.04 硬盘/磁盘扩容  
+
+https://blog.csdn.net/m0_43403238/article/details/85480314?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-6.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-6.nonecase
+
+
+```
+sudo yum install gparted
+gparted
+
+```
+### 2.Centos7使用LVM扩容磁盘
+https://blog.mn886.net/chenjianhua/show/2697c8a74fb8/index.html
+
+```
+lsblk
+
+1. pvdisplay
+2. vgextend centos /dev/sdb
+   # 其中centos为VG Name
+3. lvextend -l +51199 /dev/centos/root
+   # 其中51199为 Allocated PE
+   这个地方的后面的路径是通过lvdisplay查出来的
+4. xfs_growfs /dev/centos/root
+```</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=8">在React中获取真实DOM节点的几种方法222</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2021-12-09T07:09:13.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1098</span></div><div class="list-context">pe=&#x27;button&#x27; value=&#x27;getDom&#x27; onClick={this.onClick.bind(this)}/&gt;
+        &lt;/div&gt;
+    )
+  }
+}
+
+```
+
+### 2. 在标签中写入一个匿名函数
+
+```
+class Input extends Component {
+
+  componentDidMount() {
+    console.log(this.textInput);
+  }
+
+  render() {
+    return (
+      &lt;input
+        type=&quot;text&quot;
+        ref={input =&gt; this.textInput = input}
+      /&gt;
+    );
+  }
+```
+
+### 3. 在标签中加入一个回调函数
+
+```
+class CustomTextInput extends Component {
+
+  constructor(props) {
+    super(props);
+    this.textInput = React.createRef();
+  }
+
+  render() {
+    return (
+      &lt;input
+        type=&quot;text&quot;
+        ref={this.textInput}
+      /&gt;
+    );
+  }
+```</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=9">会学习，才是一个人最牛逼的技能</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2022-02-24T07:19:59.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>1</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1019</span></div><div class="list-context">开启任何一段学习的时候，知识就如同散落在土壤中的养分，散乱混杂，不成系统。而输入体系，就是大树伸出的根茎。它们决定了吸收哪些知识，以及如何去吸收这些知识。
+
+一个完整的知识输入体系，能让零散的知识点互相找到因果位置，形成缜密逻辑，最后自圆其说。
+
+这也正是传统的学校，书本，教材以及市面上大多数在线学习产品正在做的事情。无论是以“得到”为代表的互联网知识分享平台，还是各种商学院课堂，它们都在扮演“根茎”的角色，替我们精简总结出知识点，抽象成理论和模型，最后打包成“养分”喂给我们。
+
+然而这里却有一个问题，学习并不是一个单向的“填充式”过程。同样的知识点，接受者的认知水平不同，最后的成效也大不相同。因为知识输入的体系比输入的知识本身更重要。
+
+这很好理解。一个大学老师去和商学院的学生讲商品定价法则，肯定比去和街上卖蛋饼的阿姨讲要容易得多。但是，你不能说卖蛋饼的阿姨就不懂商品定价的道理。
+
+我在大学上市场营销课程时，老师就告诉我们，他家楼下卖蛋饼的阿姨都能熟练掌握商品定价法：
+
+如果按照蛋饼的原材料，地段租金，设备损耗等成本来计算，最后再按一定比例加上利润，这样一个蛋饼可能定价5块钱。这叫成本定价法；
+
+如果该地段周围其他卖蛋饼的，卖螺狮粉的或卖烤串的商品价格普遍在8-10块之间，阿姨在保持店铺风格和宣传差不多水平的情况下，一个蛋饼可能定价9块钱。这叫竞争定价法；
+
+但如果这个蛋饼有美味独特的口感，新颖漂亮的包装，别具一格的制作手法，还有一个朗朗上口的名字，那么这个蛋饼可能定价20块钱。这叫品牌溢价定价法；
+
+没学过营销学的阿姨，照样能从日常经营中总结出这些道理来。
+
+在这里，起决定性作用的是知识的输入体系。同样的商品定价方法，可以有商学院式的学院派模型，也可以有老百姓的市井派道理。
+
+学校、书本、课堂是一种输入体系，它帮助我们辨别，筛选和抽象出知识的理论模型，是一种自上而下的知识灌输。
+
+社会是另一种输入体系，它并不直接告诉我们结论，但却用实践和经历让我们体会和总结事物的运转规律，这是一种自下而上的知识吸取。
+
+除此之外，还有在线课堂的体系，成人大学的体系，企业培训的体系，知识社群的体系等等。输入体系没有对错之分，只有合不合适。这对我们的启示是，在开启一段学习之前，先想想哪种知识输入体系更适合自己。
+
+习惯在课堂上跟随老师的指引来学习的人，碎片化的自助式学习可能就不适合；
+
+喜欢在实践中总结经验教训的人，对纯理论的东西可能就不感冒；
+
+自主性差的人，需要强督促，放养式的学习可能就不起作用；
+
+自主性强的人，喜欢自我摸索，过多的教导反而不如点到即止的启发。
+
+这就像大树生长一样，树的根茎可以有无穷可能的伸展方式，我们要找到自己最舒服的那一种。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=10">AI音乐，腾讯音乐、网易云音乐的新版图？</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2022-02-24T07:53:22.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>2</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1026</span></div><div class="list-context">AI音乐，腾讯音乐、网易云音乐的新版图？
+韭菜财经
+·2022-02-16
+关注
+“版权大战”之后，人们的版权意识已经逐渐觉醒
+“版权大战”之后，人们的版权意识已经逐渐觉醒，以网易云音乐、腾讯音乐为代表的在线音乐头部平台，更是纷纷推出各类激励计划来抢夺独立音乐人，期望通过对独立音乐人的扶持，进一步丰富平台版权资源库。 
+
+值得一提的是，扶持音乐人需要耗费极大的人力、物力、财力，音乐创作更要经过作曲、填词、编曲等一系列繁复的流程。因此，平台想要给听众们呈现一首新歌无疑需要耗费极大的精力。与人工创作不同，AI却能通过自身强大的数字处理能力兼顾歌曲从制作到演唱的全流程，实现化繁为简，在短时间内完成音乐作品创作。换言之，只要用户提供灵感或者给出特定要求，AI就能围绕关键词从自身的海量积累中寻找符合要求的词、曲、乐器等内容来进行音乐创作。 
+
+另外，AI从最初的识别、推荐音乐到当下的创作音乐，也足以证明音乐人工智能已经迈入重要发展期，而不再是简单的“AI+音乐”了。值得注意的是，AI音乐不仅仅让在线音乐市场受益，涉及音乐产业的各行各业也将享受AI音乐带来的利好。因此，多个领域的玩家也都齐聚AI音乐赛道蓄势待发。 
+
+巨头们瞄准AI音乐
+在AI音乐赛道上，不仅有Boomy、MURU、AIVA等一众初创AI音乐公司，还有网易、快手、苹果等一众行业巨头入局，这些不同类型的玩家在AI音乐赛道上，自然各有各的差异打法。 
+
+第一类是以腾讯音乐、网易云音乐为代表的在线音乐平台，它们通过对AI技术的探索推动AI音乐创作的发展。 腾讯是走“虚拟歌手”路线，其AI Lab实验室推出AI数字人“艾灵”进行音乐演唱；而网易云音乐则是投资和自研两条腿走路，一边战略投资AI音乐公司“AIVA”，一边寻求网易雷火和伏羲实验室的技术支持，推出AI音乐品牌“网易天音”。 
+
+第二类是以快手、抖音为代表的短视频平台，它们借助AI音乐玩法来赋能平台。 快手通过自主研究，推出了AI音乐创作模型和AI歌手，并邀请平台内的音乐人使用AI模型进行歌曲创作；抖音则通过收购英国音乐AI初创公司Jukedeck，以并购的方式进军AI音乐。总之，快手和抖音希望通过AI音乐来增强自身竞争力。 
+
+第三类是以科大讯飞、苹果为代表的智能科技公司，它们依托自身优势来融合AI音乐。 科大讯飞基于自身的AI技术推出了“讯飞音乐”厂牌，该厂牌涉及唱歌合成、唱歌变声和唱歌评测等技术，还打造了主打AI+概念的词曲交易创作平台“词曲家”。苹果则是收购初创公司AI Music，推出场景化定制音乐的玩法。由此看来，科大讯飞和苹果看重的是自身服务力的提升。 
+
+这些分属不同赛道的玩家们齐聚AI音乐赛道，既表明这是一条好赛道，也说明AI音乐正在辐射音乐产业上下游的玩家们，为它们带来诸多利好。
+
+</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=11">你听的随机播放音乐，可能是算法下的伪随机03</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2022-02-24T07:56:37.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>2</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1039</span></div><div class="list-context">当你忙完当天工作，熟练地带上耳机，打开熟悉的音乐APP，点下随机播放的按钮…..
+
+听完几首音乐后，你会发现，你听到的音乐，不管是听过的、还是未知的，都是你喜欢的音调和曲风。
+
+为什么会这样呢？
+
+随机播放是真正的随机歌单，还是通过算法干预，推荐的符合用户当前心情的歌曲呢？
+
+如果你是产品经理，会给用户呈现怎样的「随机歌单」？你认为音乐App中，好的随机算法具备哪些特征？我们在天天问展开了一场讨论，一起来看看小伙伴们是怎么说的吧～
+
+01算法和随机的区别
+想要了解清楚随机播放到底是不是真随机，首先要明白随机和算法的区别。
+
+1. 什么是真正的随机
+真正的随机播放，是每次切换音乐都是独立的未知数。
+
+它就像抓阄一样，没有列表的概念，也没有上一首和下一首的概念，它会随机到不同的音乐，这才是真随机。
+
+如何判断是真随机还是算法呢？其实只要按上一首就知道了。
+
+如果切换到是你刚才听过的那一首，那就是伪随机。
+
+如果是每次都在切换不同的歌，那么就是真随机。
+
+2. 随机和算法的应用优缺点
+1）真实随机的弊端
+
+先用反证法举个例子：
+
+给喜欢古典音乐的人播放嘻哈，他是什么感受？
+
+给喜欢轻音乐的用户播放摇滚，他是什么感觉？
+
+在真的随机场景中，就不可避免地碰到这些情况，必然会导致用户的厌烦。
+
+真实随机的推送毫无章法可言，如果在茫茫如海的曲库中，随便选取部分歌曲。
+
+用户在听歌时，一首摇滚，一首轻柔古风，另一首又是古典，那用户的整体听歌体验都是割裂的。
+
+而且如果在不便切歌的情景中，如洗澡时听歌，还需擦干手再拿手机切歌；或是入睡时，一声惊雷起，这些体验都非常糟糕。
+
+2）算法随机的优点
+
+算法随机最大的优点是音乐风格的稳定性。
+
+APP通过一系列人为训练，这位“音乐厨师”能够按照你当下的口味端来同一个菜系的菜品。
+
+而对于想体验老菜品系这个使用频次很低的功能，可以直接交给用户自行搜索解决。
+
+算法随机本质上应该等同于给用户歌单进行了隐性的细分归类。
+
+3）好的随机算法的三个特征
+
+机器学习：不断通过用户行为（各种时段、歌曲频次、切歌与否、分享等）进行学习，摸索出用户的不同情境下的听歌习惯，即用户标签
+
+精准推送：能够通过用户标签找到切合当下偏好的曲库内容，这需要对每一个歌曲进行标签化分类
+
+自动生成歌单：人是机器不能完全摸透的，但是算法可以根据以往的听歌记录，生成一个有统一性的歌单。比如学习时听歌，机器不知道你在学习，但它知道这几首歌总是会一起播放，可以归为一类，用户可以自行生成歌单，添加学习标签，下次自接播放。
+
+02你所期待的随机播放，都在猜你喜欢
+其实，音乐软件的随机播放，都是根据用户的听歌记录猜测你喜欢的曲目。
+
+从以下几个角度，分析以下这样做的原因。
+
+1. 从用户使用目的出发
+我们先思考：用户随机播放的目的是什么？
+
+用户使用随机播放时，渴望听一些往常没有听过的歌曲。或者说，他们希望找到一首自己喜欢的没听过的歌曲。
+
+用户的喜好一般是固定的，不会在短时间内有较大的改变。所以在随机播放的功能中，给用户多推一些与其历史播放记录相似风格的歌曲，或略有相关的歌曲，会带来更好的效果。
+
+2. 从用户粘性与体验出发
+我们不妨把随机播放作为一个独立的产品，既然是产品，自然有应有的商业模式。
+
+随机其实是用户不知道如何选歌曲时候，常常选择的播放方式。但每个用户都有自己喜欢的歌手、歌声、音乐风格。如果真正随机，用户的目标性就没那么高，或者说用户忍耐度、可试错性就增强了不少。
+
+比如，我是一个喜欢听rap的爱打篮球的26岁男孩子，但我今天心情很差。
+
+一个喜欢听rap、爱打篮球的人就是基本的用户画像，今天心情很差是波动因子。
+
+音乐APP给心情很差的我推荐「随机歌单」，目的是想让我心情不那么差。
+
+因此它推荐了比较欢快的火箭总冠军相关的rap给我，让我感受到软件的人性，也增加了我的粘度。
+
+同时，用户的体验感也具有随机性，如果播放的都是用户感兴趣或不讨厌的歌曲，用户的体验感就不错；但如果APP随机播放了很多用户讨厌的音乐，用户就会有极差的体验。
+
+因此在设计随机播放功能时，我们需要考虑到：
+
+降低用户决策成本更符合人的思维模式
+
+持续符合喜好的输出会令用户产生依赖性
+
+一次坏的体验需要许多次好的体验才能弥补
+
+这决定了随机播放功能需要猜测用户喜欢什么歌曲，即需要基于用户在平台上的播放历史，或通过用户的性别、年龄及其他信息去分析用户的偏好，并且第一首歌必须是用户偏好度最高的那一首歌曲，以此吸引客户喜欢使用并依赖该功能。
+
+3. 从付费的角度出发
+音乐类软件本质是消费型产品，它存在的最终目的，不是为了愉悦用户心情，而是为了让用户留存。
+
+不盈利的企业都是耍流氓，而各音乐APP有那么多运营和活动，目的之一是为了让用户心甘情愿地付费。那随机歌单能为付费提供什么价值？
+
+如果你一直听同类型的歌，听久了你就会腻。然后就慢慢厌倦这个产品，企业的用户留存率就降低了。
+
+随机歌单的目的是：增加用户的新奇感，以此增加用户粘性。
+
+实现「随机歌单」的方式有很多，我认为以用户画像加波动因子结合，以此呈现「随机歌单」给用户是最好的。
+
+03现各大音乐APP使用的算法
+目前在各大音乐 App 中用得比较多的是洗牌算法，像用户数量很大的网易云音乐和 QQ 音乐等播放器都在使用。</div></li><li class="ant-list-item ant-list-item-no-flex"><div class="list-title"><a href="/detail?id=12">QQ音乐试水广告创收，后版权时代网络音乐盈利有多难？</a></div><div class="list-icon"><span><span role="img" aria-label="calendar" class="anticon anticon-calendar"><svg viewBox="64 64 896 896" focusable="false" data-icon="calendar" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg></span>2022-02-24T08:27:20.000Z</span><span><span role="img" aria-label="folder" class="anticon anticon-folder"><svg viewBox="64 64 896 896" focusable="false" data-icon="folder" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880 298.4H521L403.7 186.2a8.15 8.15 0 00-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32zM840 768H184V256h188.5l119.6 114.4H840V768z"></path></svg></span>2</span><span><span role="img" aria-label="fire" class="anticon anticon-fire"><svg viewBox="64 64 896 896" focusable="false" data-icon="fire" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M834.1 469.2A347.49 347.49 0 00751.2 354l-29.1-26.7a8.09 8.09 0 00-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 01-47.5 46.1 352.6 352.6 0 00-100.3 121.5A347.75 347.75 0 00160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0075.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 00760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0027.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0058.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0012.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0024.4 59.8 73.36 73.36 0 0053.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path></svg></span>1004</span></div><div class="list-context">独家版权的“封印”解除之后，网络音乐江湖又是一番风云际会。
+
+近日，QQ音乐近日开始内测看广告免费听歌，非绿钻非付费包用户，看15秒广告可免费听歌30分钟，包括此前仅对会员开放的完整版歌曲。
+
+其中，腾讯一直拥有独家版权的周杰伦歌曲也在免费之列。不过，有用户使用后表示：“宁愿付钱”，在他们看来，听歌还要看广告，体验感打了折扣。
+
+这是腾讯在拆掉独家版权的“城墙”之后，对网络音乐变现的一次尝试。
+
+2021年8月，腾讯宣布放弃音乐版权独家授权权利，网络音乐领域由此开启了“去版权化”大幕。
+
+其实，不止腾讯，当独家版权成为过去式，寻找新的盈利模式是网络音乐平台和版权方都必须考虑的新问题。
+
+2022年1月6日，国家版权局约谈主要唱片公司、词曲版权公司和数字音乐平台等。国家版权局强调，授权模式应通过保底金加实际使用量分成模式结算，除特殊情况外不得签署独家版权协议。
+
+网络音乐进入后版权时代，但版权竞争并未结束，只是以另一种形式存在，博弈从在线音乐平台之间的较量转变为唱片公司和音乐平台。由此带来的市场变化已然显现。
+
+去年10月和11月，网易云音乐先后与摩登天空、英皇娱乐、中国唱片集团等达成版权合作，谢霆锋、容祖儿、Twins、新裤子等众多知名艺人、乐队及音乐人的歌曲回归。然而，截至目前，周杰伦的歌曲依然未能登陆网易云音乐。
+
+网络音乐的变局不止于此，短视频入局放大了变数。有报道称，快手等短视频平台在音乐版权分成结算方面，已取得一定突破。
+
+短视频平台在音乐版权领域开疆拓土，将对腾讯音乐、网易云音乐等传统在线音乐平台构成一定的挑战。但更大的挑战，是失去独家后迷茫的盈利前景。
+
+业内人士王海（化名）表示，此前版权费的市场内卷严重，QQ音乐和网易云音乐本身盈利能力比较弱。当直播、社交娱乐和付费会员很难再有突破的情况下，打造生态或提高自制内容都是提高收入的途径，但这能否成为盈利新渠道尚不确定。
+
+腾讯版权护城河逐渐坍塌
+随着阿里文娱旗下虾米音乐于去年2月停止服务，中国在线音乐市场格局变得更为清晰——腾讯音乐与网易云音乐两强分立。
+
+
+
+但在2021年之后的日子里，腾讯逐步放开了成就其一家独大地位的版权优势。
+
+2021年7月，国家市场监管总局发布了《腾讯控股有限公司收购中国音乐集团股权违法实施经营者集中案行政处罚决定书》，要求腾讯音乐自决定书发布之日起三十日内解除与上游版权方达成的独家协议。
+
+在此之后，包括QQ音乐、网易云音乐、酷狗音乐等各大音乐平台纷纷取消了歌曲“独家”的标注。
+
+去年8月31日，腾讯发布公告称，已向达成独家协议的全部上游版权方发送了相关的函件，明确放弃与相关上游版权方有关音乐版权独家授权的权利，并告知相关上游版权方可自行向其它经营者进行授权。
+
+对腾讯音乐来说，这是其继失去国际三大唱片公司（环球、索尼、华纳）独家版权后的又一记重击，曾经的版权护城河已然逐渐坍塌。
+
+2020年前，腾讯音乐拥有与国际三大唱片公司的独家合作协议，环球、索尼、华纳把大部分音乐版权独家授权给腾讯音乐，腾讯音乐可以选择将版权以较高的价格分售网易云音乐等竞争对手。
+
+丁磊曾透露，这种独家授权模式导致包括网易云音乐等要付出超过合理价格两到三倍的成本购买分销的版权。
+
+去年5月，腾讯牢牢把守的独家版权领域再次传来冰层断裂的声音。就在腾讯音乐披露一季度财报的同一天，网易云音乐宣布，索尼音乐同时同意向腾讯音乐、网易云音乐授权歌曲版权。
+
+这是网易首次与索尼音乐达成直接授权协议。而此前2020年5月和2020年10月，网易云音乐已分别与华纳音乐、环球音乐集团也达成了相似协议。
+
+至此，三大唱片公司在中国境内独家版权销售模式已成为过去式，而接连失去独家合作协议的腾讯音乐，不仅失去了部分转售收入，其版权护城河和霸主地位也不断遭受挑战。
+
+而2021年7月音乐独家版权禁令以及近期国家版权局对产业链上下游公司的约谈，或宣告着国内在线音乐平台的独家版权竞争时代正式结束。
+
+产业时评人张书乐认为，为防止垂直领域的垄断，监管部门不仅针对平台，也针对上游版权方提出了要求，后续应该还会进一步加强监管，以维护原创者利益，确保文化创作的可持续。</div></li></ul></div></div></div></div><div class="ant-col comm-right ant-col-xs-0 ant-col-sm-0 ant-col-md-7 ant-col-lg-5 ant-col-xl-4"><div class="author-div comm-box"><div> <span style="width:100px;height:100px;line-height:100px;font-size:18px" class="ant-avatar ant-avatar-circle ant-avatar-image"><img src="/maomao.jpeg"/></span></div><div class="author-introduction">上次入门完了以后感受意犹未尽，总以为这个脚手架仍是不太完美，还有能够改进的地方，<div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center" role="separator"><span class="ant-divider-inner-text">社交账号</span></div><span style="width:28px;height:28px;line-height:28px;font-size:14px" class="ant-avatar ant-avatar-circle ant-avatar-icon account"><span role="img" aria-label="github" class="anticon anticon-github"><svg viewBox="64 64 896 896" focusable="false" data-icon="github" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></span></span><span style="width:28px;height:28px;line-height:28px;font-size:14px" class="ant-avatar ant-avatar-circle ant-avatar-icon account"><span role="img" aria-label="qq" class="anticon anticon-qq"><svg viewBox="64 64 896 896" focusable="false" data-icon="qq" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z"></path></svg></span></span><span style="width:28px;height:28px;line-height:28px;font-size:14px" class="ant-avatar ant-avatar-circle ant-avatar-icon account"><span role="img" aria-label="wechat" class="anticon anticon-wechat"><svg viewBox="64 64 896 896" focusable="false" data-icon="wechat" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M690.1 377.4c5.9 0 11.8.2 17.6.5-24.4-128.7-158.3-227.1-319.9-227.1C209 150.8 64 271.4 64 420.2c0 81.1 43.6 154.2 111.9 203.6a21.5 21.5 0 019.1 17.6c0 2.4-.5 4.6-1.1 6.9-5.5 20.3-14.2 52.8-14.6 54.3-.7 2.6-1.7 5.2-1.7 7.9 0 5.9 4.8 10.8 10.8 10.8 2.3 0 4.2-.9 6.2-2l70.9-40.9c5.3-3.1 11-5 17.2-5 3.2 0 6.4.5 9.5 1.4 33.1 9.5 68.8 14.8 105.7 14.8 6 0 11.9-.1 17.8-.4-7.1-21-10.9-43.1-10.9-66 0-135.8 132.2-245.8 295.3-245.8zm-194.3-86.5c23.8 0 43.2 19.3 43.2 43.1s-19.3 43.1-43.2 43.1c-23.8 0-43.2-19.3-43.2-43.1s19.4-43.1 43.2-43.1zm-215.9 86.2c-23.8 0-43.2-19.3-43.2-43.1s19.3-43.1 43.2-43.1 43.2 19.3 43.2 43.1-19.4 43.1-43.2 43.1zm586.8 415.6c56.9-41.2 93.2-102 93.2-169.7 0-124-120.8-224.5-269.9-224.5-149 0-269.9 100.5-269.9 224.5S540.9 847.5 690 847.5c30.8 0 60.6-4.4 88.1-12.3 2.6-.8 5.2-1.2 7.9-1.2 5.2 0 9.9 1.6 14.3 4.1l59.1 34c1.7 1 3.3 1.7 5.2 1.7a9 9 0 006.4-2.6 9 9 0 002.6-6.4c0-2.2-.9-4.4-1.4-6.6-.3-1.2-7.6-28.3-12.2-45.3-.5-1.9-.9-3.8-.9-5.7.1-5.9 3.1-11.2 7.6-14.5zM600.2 587.2c-19.9 0-36-16.1-36-35.9 0-19.8 16.1-35.9 36-35.9s36 16.1 36 35.9c0 19.8-16.2 35.9-36 35.9zm179.9 0c-19.9 0-36-16.1-36-35.9 0-19.8 16.1-35.9 36-35.9s36 16.1 36 35.9a36.08 36.08 0 01-36 35.9z"></path></svg></span></span></div></div><div class="ad-div comm-box"><div><img src="http://blogimages.jspang.com/flutter_ad2.jpg" width="100%"/></div><div><img src="http://blogimages.jspang.com/Vue_koa_ad1.jpg" width="100%"/></div><div><img src="http://blogimages.jspang.com/WechatIMG12.jpeg" width="100%"/></div></div></div></div></div></main><div class="footer-div"><div>系统由 React+Node+Ant Desgin驱动 </div><div>JSPang.com</div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":[{"id":1,"type_id":6,"title":"各路厂商花式入局，打开元宇宙的正确方式究竟是？","content":"2021年被外界称为元宇宙元年。\r\n\r\n作为近几个月来最为火热的话题，元宇宙似乎夹带了流量密码，只要与元宇宙沾边的，都迅速获得大众关注。\r\n\r\n手机厂商小米也乘上这一风头，近期回应，在元宇宙方面正积极布局。近日，悄悄投资了VR公司当红齐天。事实上，这也是小米继今年10月后第二次对其进行投资。能够看出来，小米正以更多元化的姿态入局元宇宙。\r\n\r\n在元宇宙布局的浪潮中，小米只是其中一个缩影，还有如腾讯、Meta、网易、百度这样的互联网大企加入，手机行业的华为、苹果等加塞入局，都以不同的“姿态”演绎它们入局的方式。那么，在这些玩家不断布局的形势下，元宇宙究竟走到了哪一步？\r\n\r\n“花式”走进元宇宙\r\n天眼查数据显示，截至目前11月26日，有超过960多家公司参与申请名称中含“元宇宙”的商标申请总量近6400条。值得注意的是，在10月22日之前，申请元宇宙商标的企业才为400家左右。也就是说，仅在这一个月中，申请的企业数量呈翻倍增长。蹭着这一风口，企业们都蜂拥而上。\r\n\r\n那么，受无数企业追捧的元宇宙到底是什么？\r\n\r\n据了解，元宇宙（Metaverse）的概念最早可追溯到出版于1992年美国作家尼尔·斯蒂芬森创作的科幻小说《雪崩》（Snow Crash）中。书中，斯蒂芬森描绘了一个超现实主义的数字空间“Metaverse”，为地理空间所阻隔的人们可通过各自“化身”（avatar）相互交往，度过闲暇时光，还可随意支配自己的收入。","introduce":"沉浸式游戏赶上“大潮”\r\n在国内，腾讯绝对称得上是在这方面布局的领头羊。\r\n\r\n今年9月，腾讯旗下QQ音乐与Roblox联合推出全球首款沉浸式音娱类游戏《QQ音乐星光小镇》，玩家可体验虚拟演唱会、新歌发布会、音乐节等活动；对元宇宙进行尝试。\r\n\r\n不过从腾讯近些年扩张的版图来看，基于qq、微信社交板块和游戏板块、影视等积累的用户，在后续的布局有着天然的用户流量优势。\r\n\r\n","addTime":"2021-12-05T16:00:00.000Z","view_count":99},{"id":2,"type_id":3,"title":"秦时明月，“国漫之光”只剩黯淡","content":"这些说辞没有被粉丝买账。该回答的评论区但凡出现支持者，便有“有钱一起赚”之类讥讽对方是水军的回复。而紧跟其后的高赞回答，则不乏观众带着爱之深责之切的情绪，怒斥“把秦时IP糟蹋成这样不该反思吗”。 \r\n\r\n过去的玄机科技是业界“异类”，“整整十年时间只做一部作品秦时明月”。在公司的官网上，对《秦时明月》的描述是“华语动漫巅峰力作”，它在相当长的时间里承载着“国漫之光”的期盼，前四部豆瓣评分均在9分以上。 \r\n\r\n然而第六部《沧海横流》播出后，口碑断崖下跌至5.4。六年时间，一部续作，让《秦时明月》离“国漫之光”越来越远。 \r\n\r\n国漫的空白，谁来填\r\n用沈乐平的话说，国产动画经历过“失去的十年”。 \r\n\r\n《黑猫警长》《葫芦兄弟》等作品曾辉煌一时，上海美术电影制片厂所引领的“中国学派”在世界范围内具备一定影响力，但从约1995年起，日、美动画以免费战略向国内“倾销”，在沈乐平的记忆中，日、美动画公司资金雄厚，不仅不收放映费，还常给电视台倒贴广告。国产动画由此开始走下坡路，不少企业转向代工，技术逐渐落后，一代人的童年与青春也跟日、美动画绑定着。 \r\n环境到2005年左右产生转变，国家有关部门开始颁发一系列扶持动漫产业的重要文件，涉及资金、税收、电视台播放等多个方面，短短几年内国产动画的产量明显提升。2008年，广电总局规定“全国各级电视台所有频道不得在17：00-21：00播出境外动画片”，基本给电视时代的动画之争划上了句号。\r\n《秦时明月》正是这段时期内的产物。 33岁的沈乐平在2005年创办玄机科技，其注册地杭州的补贴额度并非最高，地方政府的方式是不分二维三维，每分钟1000元，南京、郑州等城市则可达3-4倍，在政策利好、资本过热的背景下，不乏鱼目混珠的劣质动画，“蓬勃鼎盛时有几千家公司，留下来的不到5％，玄机是那一波的幸存者”，更是“优胜者”。 ","introduce":"秦时明月，“国漫之光”只剩黯淡\r\n时代宠儿的坠落。\r\n时代可以选择它，也可以抛下它。\r\n“有这经费和功夫，就不能用在第六部上？” \r\n11月底，《新秦时明月》上线，目前已有3集，粉丝们等来的“新作”，只是第一部《百步飞剑》的重制版。作为已被时间检验过的经典作品，有负面评价并非重制版质量不够，而是针对制片方玄机科技的“炒冷饭”行为。 ","addTime":"2021-12-06T04:39:27.000Z","view_count":199},{"id":3,"type_id":1,"title":"git添加、删除远程仓库","content":"[TOC]\r\n\r\nhttps://blog.csdn.net/zhezhebie/article/details/78761417\r\n\r\n## 1、仓库\r\n### 1.仓库路径查询查询：\r\n\r\n```\r\ngit remote -v\r\n```\r\n### 2.添加远程仓库：\r\n\r\n```\r\ngit remote add origin \u003c你的项目地址\u003e //注:项目地址形式为:https://gitee.com/xxx/xxx.git或者 git@gitee.com:xxx/xxx.git\r\n\r\n```\r\n\r\n### 3.删除指定的远程：\r\n\r\n```\r\ngit remote rm origin\r\n\r\n```\r\n\r\n## 2、本地初始化一个项目\r\n \r\n\u003e 首先，你需要执行下面两条命令，作为 git 的基础配置，作用是告诉 git 你是谁，你输入的信息将出现在你创建的提交中。\r\n\r\n\r\n```\r\ngit config --global user.name \"你的名字或昵称\"\r\ngit config --global user.email \"你的邮箱\"\r\n```\r\n\r\n \r\n\u003e  然后在你的需要初始化版本库的文件夹中执行：\r\n\r\n```\r\ngit init \r\ngit remote add origin \u003c你的项目地址\u003e //注:项目地址形式\r\n```\r\n\u003e 为:http://git.oschina.net/xxx/xxx.git或者 git@git.oschina.net:xxx/xxx.git\r\n这样就完成了一次版本你的初始化。\r\n\r\n\u003e 如果你想克隆一个项目，只需要执行：\r\n\r\n```\r\ngit clone \u003c项目地址\u003e\r\n```\r\n\r\n## 3、完成第一次提交\r\n\r\n\u003e 进入你已经初始化好的或者克隆项目的目录，然后执行：\r\n\r\n\r\n```\r\ngit pull origin master\r\n```\r\n\r\n\r\n\u003e \u003c这里需要修改/添加文件，否则与原文件相比就没有变动\u003e\r\n\r\n\r\n```\r\ngit add .\r\ngit commit -m \"第一次提交\"\r\ngit push origin master\r\n```\r\n\u003e 然后如果需要账号密码的话就输入账号密码，这样就完成了一次提交。\r\n\r\n\u003e 此时，你可以在你的个人面板、项目主页查看到你的提交记录，例如：http://git.oschina.net/oschina/git-osc/commit/f3dd1c5bae48fa4244e2595a39e750e5606dd9be\r\n\r\n\u003e 按照本文档新建的项目时，在码云平台仓库上已经存在 readme 文件，故在提交时可能会存在冲突，这时您需要选择的是保留线上的文件或者舍弃线上的文件，如果您舍弃线上的文件，则在推送时选择强制推送，强制推送需要执行下面的命令：\r\n\r\n\r\n```\r\ngit push origin master -f\r\n```\r\n\r\n\u003e 如果您选择保留线上的 readme 文件，则需要先执行：\r\n\r\n\r\n```\r\ngit pull origin master\r\n```\r\n\r\n\u003e 修改gitignore之后所作的操作：\r\n\r\n```\r\ngit rm --cached .gitignore\r\ngit add .gitignore\r\ngit commit -m 'update .gitignore'\r\n```\r\n\r\n\u003e 使用远程代码强制覆盖本地代码：\r\n\r\n```\r\ngit fetch --all\r\ngit reset --hard origin/master\r\n```\r\n\r\n\r\n## 4、【Git】Updates were rejected because the tip of your current branch is behind\r\n\r\nhttps://blog.csdn.net/zhangkui0418/article/details/82977519\r\n\r\n```\r\n刚创建的github版本库，在push代码时遇到以上错误：\r\n\r\n有如下几种解决方法：\r\n\r\n        1，push前先将远程repository修改pull下来\r\n\r\n        $ git pull origin master\r\n\r\n        $ git push -u origin master\r\n\r\n        2，使用强制push的方法：\r\n\r\n        $ git push -u origin master -f \r\n\r\n        这样会使远程修改丢失，一般是不可取的，尤其是多人协作开发的时候。\r\n\r\n        3，若不想merge远程和本地修改，可以先创建新的分支：\r\n\r\n        $ git branch [name]\r\n\r\n        然后push\r\n\r\n        $ git push -u origin [name]\r\n\r\n在解决问题中遇到的几个问题：\r\n\r\n        1，git pull 提示refusing to merge unrelated histories\r\n\r\n        是因为两端在做完全不同的提交\r\n\r\n        解决方法：git pull --allow-unrelated-histories\r\n\r\n        2，git pull 报错:There is no tracking information for the current branch\r\n```\r\n","introduce":"仓库路径查询查询","addTime":"2021-12-07T08:27:31.000Z","view_count":1999},{"id":4,"type_id":1,"title":"Windows11 中安装Linux 教程 | WSL2的使用","content":"\r\nWindows11 中安装Linux 教程 | WSL2的使用\r\n\r\n作为一个程序员在开发中会经常使用Linux环境进行开发，但并不是每个程序员都能拥有一台自己的苹果笔记本电脑的。毕竟苹果的价格还是比Windows电脑贵很多的。\r\n\r\n其实在的Windows10以上的系统是完全可以使用Linux开发环境的，这个救命稻草就是`WSL2`。这个教程，我们就详细讲解一下Win11下，如何使用`WSL2- Windows Subsystem for Linux`。\r\n\r\n## BIOS中开启虚拟化\r\n\r\n第一步是打开主板BIOS的虚拟化选项，如果你是这几年新买的电脑，默认这项是打开的。注意这一项每个电脑主板型号的不同，设置的方法也不同。所以最好的方法，是你根据自己主板的型号，去百度或者Google去搜索一下开启虚拟话的方法。\r\n\r\n![BIOS开启虚拟化](https://newimg.jspang.com/Docker2_1_BIOS.jpg)\r\n\r\n\r\n- Windows平台 ：Intel（VMX）Virtuallzation  Technology  需要到主板中进行开启\r\n- AMD平台：AMD-V\r\n\r\n## WSL的两个版本和安装要求\r\n\r\n- WSL ：也就是我们常说WSL1，第一个版本，对windows的版本要求较低\r\n- WSL2：第二个版本，要求WIN10版本高于1903\r\n\r\n至于两个版本的区别不是教程的重点，就不做过多的介绍了。\r\n\r\n## WSL2安装过程\r\n\r\nMicrosoft英文版文档网址：[https://docs.microsoft.com/en-us/windows/wsl/install-manual](https://docs.microsoft.com/en-us/windows/wsl/install-manual)\r\n\r\n- **第一步**：启动WSL。用管理员身份打开`PowerShell`.(打开方法见视频)，然后在PowerShell中，输入下面的命令。\r\n\r\n```jsx\r\ndism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart\r\n```\r\n\r\n- **第二步**：启动虚拟机给功能。同样在PoweShell中输入下面的命令。输入完命令后，要重启一下电脑，然后再进行第三步。\r\n\r\n```jsx\r\ndism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart\r\n```\r\n\r\n- **第三步**：下载Linux内核更新包。\r\n\r\n\u003e 下载地址：[https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)\r\n\u003e \r\n\r\n- **第四步**：将WSL2设置为默认版本。打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本，命令如下。\r\n\r\n```jsx\r\nwsl --set-default-version 2\r\n```\r\n\r\n第四步安装完成后，你就可以去安装对应的Linux发行版了，这里我们拿Ubuntu举例。\r\n\r\n## 安装Ubuntu发行版\r\n\r\n打开`Microsoft Store`，并选择你偏好的Linux分发版。我这里选择`Ubuntu`并进行安装。下载时间会根据网络不同，时间不同。我家的网络安装还是比较慢的。\r\n\r\n安装完成后，就可以使用了。如果是首次进入，需要你设置用户名和密码。当进入系统后，可以使用下面的命令来查看当前Ubuntu的版本。\r\n\r\n```jsx\r\nlsb_release -a\r\n```\r\n\r\n输入完命令后，就可以看到版本信息了。至此WSL2的安装过程就演示完成了，希望本视频对你有所帮助。","introduce":"作为一个程序员在开发中会经常使用Linux环境进行开发，但并不是每个程序员都能拥有一台自己的苹果笔记本电脑的。毕竟苹果的价格还是比Windows电脑贵很多的。","addTime":"2021-12-07T09:46:41.000Z","view_count":2999},{"id":5,"type_id":1,"title":"babel-loader实现","content":"[链接地址](https://www.jianshu.com/p/297e838b104e)\n\u003e 首先安装“@babel/core”（babel核心模块）和“@babel/preset-env”，因为我要实现“babel-loader”，所以这里就不装loader了\n\n\n```\n//webpack.config.js\nmodule: {\n    rules: [\n      {\n        test: /\\.js$/,\n        use: {\n          loader: \"babel-loader\",   // 这个loader使我们自己写的，不引用官方的\n          options: {\n            presets: [\"@babel/preset-env\"]   // 转换规则\n          }\n        }\n      }\n    ]\n  }\n//loader文件夹下新建babel-loader.js文件\nlet babel = require('@babel/core');  // 引入babel核心块\nfunction loader(source) {\n  return source\n}\nmodule.exports = loader;\n```\n\n==@babel/core==是babel的核心模块，编译器。提供转换的API。\n以上babel-loader.js中，我已经引入了babel/core，然后我们需要告诉webpack，要以什么规则（方式）转换我们的js文件，es-2015，stage-2，env...。可以看到webpack配置文件中，我已经给了presets-env，那么我们需要在babel-loader.js中引入这个预设规则。引入规则的前提，需要安装包==loader-utils==(用来拿传递的参数)","introduce":"@babel/core","addTime":"2021-12-09T06:19:30.000Z","view_count":1010},{"id":6,"type_id":1,"title":"（mac）node升级或版本切换方法","content":"#### 1、首先安装n模块：\n\n```\nsudo npm install -g n\n```\n\n#### 2、升级node.js到最新稳定版\n\n```\nsudo n stable\n```\n\n#### 3、升级到最新版\n\n```\nsudo n latest\n```\n\n#### 4、n后面也可以跟随版本号,升级到任意版本\n\n```\nsudo n v0.10.26或sudo n 0.10.26\n```\n\n#### 5、切换使用版本\n\n```\nsudo n 7.10.0\n```\n\n#### 6、删除制定版本\n\n```\nsudo n rm 7.10.0\n```\n\n#### 7、用制定的版本执行脚本\n\n```\nn use 7.10.0 some.js\n```\n\n#### 8、sudo n\n\u003e 可以查看所有已安装的node版本，可以根据上下和回车选择要使用的版本\n\n","introduce":"（mac）node升级或版本切换方法","addTime":"2021-12-09T06:49:09.000Z","view_count":1035},{"id":7,"type_id":1,"title":"gparted+Centos7使用LVM扩容磁盘","content":"### 1. gparted\n\nVMware虚拟机 Linux系统 Ubuntu 16.04 硬盘/磁盘扩容  \n\nhttps://blog.csdn.net/m0_43403238/article/details/85480314?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-6.nonecase\u0026depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-6.nonecase\n\n\n```\nsudo yum install gparted\ngparted\n\n```\n### 2.Centos7使用LVM扩容磁盘\nhttps://blog.mn886.net/chenjianhua/show/2697c8a74fb8/index.html\n\n```\nlsblk\n\n1. pvdisplay\n2. vgextend centos /dev/sdb\n   # 其中centos为VG Name\n3. lvextend -l +51199 /dev/centos/root\n   # 其中51199为 Allocated PE\n   这个地方的后面的路径是通过lvdisplay查出来的\n4. xfs_growfs /dev/centos/root\n```","introduce":"gparted+Centos7使用LVM扩容磁盘","addTime":"2021-12-09T06:57:09.000Z","view_count":1078},{"id":8,"type_id":1,"title":"在React中获取真实DOM节点的几种方法222","content":"pe='button' value='getDom' onClick={this.onClick.bind(this)}/\u003e\n        \u003c/div\u003e\n    )\n  }\n}\n\n```\n\n### 2. 在标签中写入一个匿名函数\n\n```\nclass Input extends Component {\n\n  componentDidMount() {\n    console.log(this.textInput);\n  }\n\n  render() {\n    return (\n      \u003cinput\n        type=\"text\"\n        ref={input =\u003e this.textInput = input}\n      /\u003e\n    );\n  }\n```\n\n### 3. 在标签中加入一个回调函数\n\n```\nclass CustomTextInput extends Component {\n\n  constructor(props) {\n    super(props);\n    this.textInput = React.createRef();\n  }\n\n  render() {\n    return (\n      \u003cinput\n        type=\"text\"\n        ref={this.textInput}\n      /\u003e\n    );\n  }\n```","introduce":"在React中获取真实DOM节点的几种方法222","addTime":"2021-12-09T07:09:13.000Z","view_count":1098},{"id":9,"type_id":1,"title":"会学习，才是一个人最牛逼的技能","content":"开启任何一段学习的时候，知识就如同散落在土壤中的养分，散乱混杂，不成系统。而输入体系，就是大树伸出的根茎。它们决定了吸收哪些知识，以及如何去吸收这些知识。\n\n一个完整的知识输入体系，能让零散的知识点互相找到因果位置，形成缜密逻辑，最后自圆其说。\n\n这也正是传统的学校，书本，教材以及市面上大多数在线学习产品正在做的事情。无论是以“得到”为代表的互联网知识分享平台，还是各种商学院课堂，它们都在扮演“根茎”的角色，替我们精简总结出知识点，抽象成理论和模型，最后打包成“养分”喂给我们。\n\n然而这里却有一个问题，学习并不是一个单向的“填充式”过程。同样的知识点，接受者的认知水平不同，最后的成效也大不相同。因为知识输入的体系比输入的知识本身更重要。\n\n这很好理解。一个大学老师去和商学院的学生讲商品定价法则，肯定比去和街上卖蛋饼的阿姨讲要容易得多。但是，你不能说卖蛋饼的阿姨就不懂商品定价的道理。\n\n我在大学上市场营销课程时，老师就告诉我们，他家楼下卖蛋饼的阿姨都能熟练掌握商品定价法：\n\n如果按照蛋饼的原材料，地段租金，设备损耗等成本来计算，最后再按一定比例加上利润，这样一个蛋饼可能定价5块钱。这叫成本定价法；\n\n如果该地段周围其他卖蛋饼的，卖螺狮粉的或卖烤串的商品价格普遍在8-10块之间，阿姨在保持店铺风格和宣传差不多水平的情况下，一个蛋饼可能定价9块钱。这叫竞争定价法；\n\n但如果这个蛋饼有美味独特的口感，新颖漂亮的包装，别具一格的制作手法，还有一个朗朗上口的名字，那么这个蛋饼可能定价20块钱。这叫品牌溢价定价法；\n\n没学过营销学的阿姨，照样能从日常经营中总结出这些道理来。\n\n在这里，起决定性作用的是知识的输入体系。同样的商品定价方法，可以有商学院式的学院派模型，也可以有老百姓的市井派道理。\n\n学校、书本、课堂是一种输入体系，它帮助我们辨别，筛选和抽象出知识的理论模型，是一种自上而下的知识灌输。\n\n社会是另一种输入体系，它并不直接告诉我们结论，但却用实践和经历让我们体会和总结事物的运转规律，这是一种自下而上的知识吸取。\n\n除此之外，还有在线课堂的体系，成人大学的体系，企业培训的体系，知识社群的体系等等。输入体系没有对错之分，只有合不合适。这对我们的启示是，在开启一段学习之前，先想想哪种知识输入体系更适合自己。\n\n习惯在课堂上跟随老师的指引来学习的人，碎片化的自助式学习可能就不适合；\n\n喜欢在实践中总结经验教训的人，对纯理论的东西可能就不感冒；\n\n自主性差的人，需要强督促，放养式的学习可能就不起作用；\n\n自主性强的人，喜欢自我摸索，过多的教导反而不如点到即止的启发。\n\n这就像大树生长一样，树的根茎可以有无穷可能的伸展方式，我们要找到自己最舒服的那一种。","introduce":"我们学习知识的过程，和树木的生长发育很像。\n\n它可以分为三个阶段：底层，分界点和上层。\n\n在学习底层，起决定作用的不是知识本身，而是知识的输入体系。","addTime":"2022-02-24T07:19:59.000Z","view_count":1019},{"id":10,"type_id":2,"title":"AI音乐，腾讯音乐、网易云音乐的新版图？","content":"AI音乐，腾讯音乐、网易云音乐的新版图？\n韭菜财经\n·2022-02-16\n关注\n“版权大战”之后，人们的版权意识已经逐渐觉醒\n“版权大战”之后，人们的版权意识已经逐渐觉醒，以网易云音乐、腾讯音乐为代表的在线音乐头部平台，更是纷纷推出各类激励计划来抢夺独立音乐人，期望通过对独立音乐人的扶持，进一步丰富平台版权资源库。 \n\n值得一提的是，扶持音乐人需要耗费极大的人力、物力、财力，音乐创作更要经过作曲、填词、编曲等一系列繁复的流程。因此，平台想要给听众们呈现一首新歌无疑需要耗费极大的精力。与人工创作不同，AI却能通过自身强大的数字处理能力兼顾歌曲从制作到演唱的全流程，实现化繁为简，在短时间内完成音乐作品创作。换言之，只要用户提供灵感或者给出特定要求，AI就能围绕关键词从自身的海量积累中寻找符合要求的词、曲、乐器等内容来进行音乐创作。 \n\n另外，AI从最初的识别、推荐音乐到当下的创作音乐，也足以证明音乐人工智能已经迈入重要发展期，而不再是简单的“AI+音乐”了。值得注意的是，AI音乐不仅仅让在线音乐市场受益，涉及音乐产业的各行各业也将享受AI音乐带来的利好。因此，多个领域的玩家也都齐聚AI音乐赛道蓄势待发。 \n\n巨头们瞄准AI音乐\n在AI音乐赛道上，不仅有Boomy、MURU、AIVA等一众初创AI音乐公司，还有网易、快手、苹果等一众行业巨头入局，这些不同类型的玩家在AI音乐赛道上，自然各有各的差异打法。 \n\n第一类是以腾讯音乐、网易云音乐为代表的在线音乐平台，它们通过对AI技术的探索推动AI音乐创作的发展。 腾讯是走“虚拟歌手”路线，其AI Lab实验室推出AI数字人“艾灵”进行音乐演唱；而网易云音乐则是投资和自研两条腿走路，一边战略投资AI音乐公司“AIVA”，一边寻求网易雷火和伏羲实验室的技术支持，推出AI音乐品牌“网易天音”。 \n\n第二类是以快手、抖音为代表的短视频平台，它们借助AI音乐玩法来赋能平台。 快手通过自主研究，推出了AI音乐创作模型和AI歌手，并邀请平台内的音乐人使用AI模型进行歌曲创作；抖音则通过收购英国音乐AI初创公司Jukedeck，以并购的方式进军AI音乐。总之，快手和抖音希望通过AI音乐来增强自身竞争力。 \n\n第三类是以科大讯飞、苹果为代表的智能科技公司，它们依托自身优势来融合AI音乐。 科大讯飞基于自身的AI技术推出了“讯飞音乐”厂牌，该厂牌涉及唱歌合成、唱歌变声和唱歌评测等技术，还打造了主打AI+概念的词曲交易创作平台“词曲家”。苹果则是收购初创公司AI Music，推出场景化定制音乐的玩法。由此看来，科大讯飞和苹果看重的是自身服务力的提升。 \n\n这些分属不同赛道的玩家们齐聚AI音乐赛道，既表明这是一条好赛道，也说明AI音乐正在辐射音乐产业上下游的玩家们，为它们带来诸多利好。\n\n","introduce":"“版权大战”之后，人们的版权意识已经逐渐觉醒，以网易云音乐、腾讯音乐为代表的在线音乐头部平台，更是纷纷推出各类激励计划来抢夺独立音乐人，期望通过对独立音乐人的扶持，进一步丰富平台版权资源库。 \n\n","addTime":"2022-02-24T07:53:22.000Z","view_count":1026},{"id":11,"type_id":2,"title":"你听的随机播放音乐，可能是算法下的伪随机03","content":"当你忙完当天工作，熟练地带上耳机，打开熟悉的音乐APP，点下随机播放的按钮…..\n\n听完几首音乐后，你会发现，你听到的音乐，不管是听过的、还是未知的，都是你喜欢的音调和曲风。\n\n为什么会这样呢？\n\n随机播放是真正的随机歌单，还是通过算法干预，推荐的符合用户当前心情的歌曲呢？\n\n如果你是产品经理，会给用户呈现怎样的「随机歌单」？你认为音乐App中，好的随机算法具备哪些特征？我们在天天问展开了一场讨论，一起来看看小伙伴们是怎么说的吧～\n\n01算法和随机的区别\n想要了解清楚随机播放到底是不是真随机，首先要明白随机和算法的区别。\n\n1. 什么是真正的随机\n真正的随机播放，是每次切换音乐都是独立的未知数。\n\n它就像抓阄一样，没有列表的概念，也没有上一首和下一首的概念，它会随机到不同的音乐，这才是真随机。\n\n如何判断是真随机还是算法呢？其实只要按上一首就知道了。\n\n如果切换到是你刚才听过的那一首，那就是伪随机。\n\n如果是每次都在切换不同的歌，那么就是真随机。\n\n2. 随机和算法的应用优缺点\n1）真实随机的弊端\n\n先用反证法举个例子：\n\n给喜欢古典音乐的人播放嘻哈，他是什么感受？\n\n给喜欢轻音乐的用户播放摇滚，他是什么感觉？\n\n在真的随机场景中，就不可避免地碰到这些情况，必然会导致用户的厌烦。\n\n真实随机的推送毫无章法可言，如果在茫茫如海的曲库中，随便选取部分歌曲。\n\n用户在听歌时，一首摇滚，一首轻柔古风，另一首又是古典，那用户的整体听歌体验都是割裂的。\n\n而且如果在不便切歌的情景中，如洗澡时听歌，还需擦干手再拿手机切歌；或是入睡时，一声惊雷起，这些体验都非常糟糕。\n\n2）算法随机的优点\n\n算法随机最大的优点是音乐风格的稳定性。\n\nAPP通过一系列人为训练，这位“音乐厨师”能够按照你当下的口味端来同一个菜系的菜品。\n\n而对于想体验老菜品系这个使用频次很低的功能，可以直接交给用户自行搜索解决。\n\n算法随机本质上应该等同于给用户歌单进行了隐性的细分归类。\n\n3）好的随机算法的三个特征\n\n机器学习：不断通过用户行为（各种时段、歌曲频次、切歌与否、分享等）进行学习，摸索出用户的不同情境下的听歌习惯，即用户标签\n\n精准推送：能够通过用户标签找到切合当下偏好的曲库内容，这需要对每一个歌曲进行标签化分类\n\n自动生成歌单：人是机器不能完全摸透的，但是算法可以根据以往的听歌记录，生成一个有统一性的歌单。比如学习时听歌，机器不知道你在学习，但它知道这几首歌总是会一起播放，可以归为一类，用户可以自行生成歌单，添加学习标签，下次自接播放。\n\n02你所期待的随机播放，都在猜你喜欢\n其实，音乐软件的随机播放，都是根据用户的听歌记录猜测你喜欢的曲目。\n\n从以下几个角度，分析以下这样做的原因。\n\n1. 从用户使用目的出发\n我们先思考：用户随机播放的目的是什么？\n\n用户使用随机播放时，渴望听一些往常没有听过的歌曲。或者说，他们希望找到一首自己喜欢的没听过的歌曲。\n\n用户的喜好一般是固定的，不会在短时间内有较大的改变。所以在随机播放的功能中，给用户多推一些与其历史播放记录相似风格的歌曲，或略有相关的歌曲，会带来更好的效果。\n\n2. 从用户粘性与体验出发\n我们不妨把随机播放作为一个独立的产品，既然是产品，自然有应有的商业模式。\n\n随机其实是用户不知道如何选歌曲时候，常常选择的播放方式。但每个用户都有自己喜欢的歌手、歌声、音乐风格。如果真正随机，用户的目标性就没那么高，或者说用户忍耐度、可试错性就增强了不少。\n\n比如，我是一个喜欢听rap的爱打篮球的26岁男孩子，但我今天心情很差。\n\n一个喜欢听rap、爱打篮球的人就是基本的用户画像，今天心情很差是波动因子。\n\n音乐APP给心情很差的我推荐「随机歌单」，目的是想让我心情不那么差。\n\n因此它推荐了比较欢快的火箭总冠军相关的rap给我，让我感受到软件的人性，也增加了我的粘度。\n\n同时，用户的体验感也具有随机性，如果播放的都是用户感兴趣或不讨厌的歌曲，用户的体验感就不错；但如果APP随机播放了很多用户讨厌的音乐，用户就会有极差的体验。\n\n因此在设计随机播放功能时，我们需要考虑到：\n\n降低用户决策成本更符合人的思维模式\n\n持续符合喜好的输出会令用户产生依赖性\n\n一次坏的体验需要许多次好的体验才能弥补\n\n这决定了随机播放功能需要猜测用户喜欢什么歌曲，即需要基于用户在平台上的播放历史，或通过用户的性别、年龄及其他信息去分析用户的偏好，并且第一首歌必须是用户偏好度最高的那一首歌曲，以此吸引客户喜欢使用并依赖该功能。\n\n3. 从付费的角度出发\n音乐类软件本质是消费型产品，它存在的最终目的，不是为了愉悦用户心情，而是为了让用户留存。\n\n不盈利的企业都是耍流氓，而各音乐APP有那么多运营和活动，目的之一是为了让用户心甘情愿地付费。那随机歌单能为付费提供什么价值？\n\n如果你一直听同类型的歌，听久了你就会腻。然后就慢慢厌倦这个产品，企业的用户留存率就降低了。\n\n随机歌单的目的是：增加用户的新奇感，以此增加用户粘性。\n\n实现「随机歌单」的方式有很多，我认为以用户画像加波动因子结合，以此呈现「随机歌单」给用户是最好的。\n\n03现各大音乐APP使用的算法\n目前在各大音乐 App 中用得比较多的是洗牌算法，像用户数量很大的网易云音乐和 QQ 音乐等播放器都在使用。","introduce":"所以，你是喜欢真随机还是伪随机呢？","addTime":"2022-02-24T07:56:37.000Z","view_count":1039},{"id":12,"type_id":2,"title":"QQ音乐试水广告创收，后版权时代网络音乐盈利有多难？","content":"独家版权的“封印”解除之后，网络音乐江湖又是一番风云际会。\n\n近日，QQ音乐近日开始内测看广告免费听歌，非绿钻非付费包用户，看15秒广告可免费听歌30分钟，包括此前仅对会员开放的完整版歌曲。\n\n其中，腾讯一直拥有独家版权的周杰伦歌曲也在免费之列。不过，有用户使用后表示：“宁愿付钱”，在他们看来，听歌还要看广告，体验感打了折扣。\n\n这是腾讯在拆掉独家版权的“城墙”之后，对网络音乐变现的一次尝试。\n\n2021年8月，腾讯宣布放弃音乐版权独家授权权利，网络音乐领域由此开启了“去版权化”大幕。\n\n其实，不止腾讯，当独家版权成为过去式，寻找新的盈利模式是网络音乐平台和版权方都必须考虑的新问题。\n\n2022年1月6日，国家版权局约谈主要唱片公司、词曲版权公司和数字音乐平台等。国家版权局强调，授权模式应通过保底金加实际使用量分成模式结算，除特殊情况外不得签署独家版权协议。\n\n网络音乐进入后版权时代，但版权竞争并未结束，只是以另一种形式存在，博弈从在线音乐平台之间的较量转变为唱片公司和音乐平台。由此带来的市场变化已然显现。\n\n去年10月和11月，网易云音乐先后与摩登天空、英皇娱乐、中国唱片集团等达成版权合作，谢霆锋、容祖儿、Twins、新裤子等众多知名艺人、乐队及音乐人的歌曲回归。然而，截至目前，周杰伦的歌曲依然未能登陆网易云音乐。\n\n网络音乐的变局不止于此，短视频入局放大了变数。有报道称，快手等短视频平台在音乐版权分成结算方面，已取得一定突破。\n\n短视频平台在音乐版权领域开疆拓土，将对腾讯音乐、网易云音乐等传统在线音乐平台构成一定的挑战。但更大的挑战，是失去独家后迷茫的盈利前景。\n\n业内人士王海（化名）表示，此前版权费的市场内卷严重，QQ音乐和网易云音乐本身盈利能力比较弱。当直播、社交娱乐和付费会员很难再有突破的情况下，打造生态或提高自制内容都是提高收入的途径，但这能否成为盈利新渠道尚不确定。\n\n腾讯版权护城河逐渐坍塌\n随着阿里文娱旗下虾米音乐于去年2月停止服务，中国在线音乐市场格局变得更为清晰——腾讯音乐与网易云音乐两强分立。\n\n\n\n但在2021年之后的日子里，腾讯逐步放开了成就其一家独大地位的版权优势。\n\n2021年7月，国家市场监管总局发布了《腾讯控股有限公司收购中国音乐集团股权违法实施经营者集中案行政处罚决定书》，要求腾讯音乐自决定书发布之日起三十日内解除与上游版权方达成的独家协议。\n\n在此之后，包括QQ音乐、网易云音乐、酷狗音乐等各大音乐平台纷纷取消了歌曲“独家”的标注。\n\n去年8月31日，腾讯发布公告称，已向达成独家协议的全部上游版权方发送了相关的函件，明确放弃与相关上游版权方有关音乐版权独家授权的权利，并告知相关上游版权方可自行向其它经营者进行授权。\n\n对腾讯音乐来说，这是其继失去国际三大唱片公司（环球、索尼、华纳）独家版权后的又一记重击，曾经的版权护城河已然逐渐坍塌。\n\n2020年前，腾讯音乐拥有与国际三大唱片公司的独家合作协议，环球、索尼、华纳把大部分音乐版权独家授权给腾讯音乐，腾讯音乐可以选择将版权以较高的价格分售网易云音乐等竞争对手。\n\n丁磊曾透露，这种独家授权模式导致包括网易云音乐等要付出超过合理价格两到三倍的成本购买分销的版权。\n\n去年5月，腾讯牢牢把守的独家版权领域再次传来冰层断裂的声音。就在腾讯音乐披露一季度财报的同一天，网易云音乐宣布，索尼音乐同时同意向腾讯音乐、网易云音乐授权歌曲版权。\n\n这是网易首次与索尼音乐达成直接授权协议。而此前2020年5月和2020年10月，网易云音乐已分别与华纳音乐、环球音乐集团也达成了相似协议。\n\n至此，三大唱片公司在中国境内独家版权销售模式已成为过去式，而接连失去独家合作协议的腾讯音乐，不仅失去了部分转售收入，其版权护城河和霸主地位也不断遭受挑战。\n\n而2021年7月音乐独家版权禁令以及近期国家版权局对产业链上下游公司的约谈，或宣告着国内在线音乐平台的独家版权竞争时代正式结束。\n\n产业时评人张书乐认为，为防止垂直领域的垄断，监管部门不仅针对平台，也针对上游版权方提出了要求，后续应该还会进一步加强监管，以维护原创者利益，确保文化创作的可持续。","introduce":"独家版权时代结束，版权竞争并未结束。\n核心提示：\n\n1.此前版权费的市场内卷严重，QQ音乐和网易云音乐本身盈利能力比较弱。当独家版权成为过去式，打造生态或提高自制内容都是提高收入的途径，但这能否成为盈利新渠道尚不确定。\n\n2. 对于唱片公司等上游版权方，“去独家”意味着失去了躺着赚钱的高额收益机会，而音乐平台可以结束恶性竞争，降低版权成本。\n\n3.音乐版权进入新时代，快手、抖音等短视频平台也成为一直重要的博弈力量。有业内人士表示，抖音在版权方面有让版权方很头疼的“霸王条款”。\n\n4. 内容成本一直是音乐平台的一大困扰，在音乐版权恶性竞争的时代结束后，音乐平台仍需要不断拓宽变现模式。","addTime":"2022-02-24T08:27:20.000Z","view_count":1004}]}},"page":"/","query":{},"buildId":"d7wTu-Hu8dgcPRSLLQfpu","assetPrefix":"/next-react-blog","runtimeConfig":{"linkPrefix":"/next-react-blog/"},"nextExport":true,"isFallback":false,"gip":true,"head":[["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"width=device-width"}]]}</script><script nomodule="" src="/next-react-blog/_next/static/chunks/polyfills-6d6446214035a37ee7d9.js"></script><script src="/next-react-blog/_next/static/chunks/main-12f6dac265bc3318ef89.js" async=""></script><script src="/next-react-blog/_next/static/chunks/webpack-22eaaa575d3c455933b4.js" async=""></script><script src="/next-react-blog/_next/static/chunks/framework.c0a3c3781383166828ef.js" async=""></script><script src="/next-react-blog/_next/static/chunks/9f5962b7.33fae6201fee986d0584.js" async=""></script><script src="/next-react-blog/_next/static/chunks/commons.5f53bed194f83057eba5.js" async=""></script><script src="/next-react-blog/_next/static/chunks/b1e31483b7ea8e4bab68f559cc18359a9ec375ab.54c63b8b6b512e1d0a9d.js" async=""></script><script src="/next-react-blog/_next/static/chunks/70fffa4e6ba304d9c92350615ffb5e08ca3f8cb5.4d58bd605b463c9021e4.js" async=""></script><script src="/next-react-blog/_next/static/chunks/ccff254959233db746e065d15c670f967a70a969.e5fba008d11d537ee2ba.js" async=""></script><script src="/next-react-blog/_next/static/chunks/styles.c20533633de976124fa6.js" async=""></script><script src="/next-react-blog/_next/static/chunks/pages/_app-f00bce3bd4aea5c47ef3.js" async=""></script><script src="/next-react-blog/_next/static/chunks/dad3b0f0e499a07bb4975f41207502b178a4bed7.9f271777242f13e55cea.js" async=""></script><script src="/next-react-blog/_next/static/chunks/5e7ada1cf523d3c9a8439b1676a96e72a4fd510f.d688be49c21fd0dfd981.js" async=""></script><script src="/next-react-blog/_next/static/chunks/pages/index-ce85c06de218243842f8.js" async=""></script><script src="/next-react-blog/_next/static/d7wTu-Hu8dgcPRSLLQfpu/_buildManifest.js" async=""></script><script src="/next-react-blog/_next/static/d7wTu-Hu8dgcPRSLLQfpu/_ssgManifest.js" async=""></script></body></html>

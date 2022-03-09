@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
+import axios from 'axios';
+import servicePath from '../config/apiUrl';
 import Head from 'next/head'
 import { Row, Col, List, Icon, Breadcrumb } from 'antd'
 import { CalendarOutlined, FolderOutlined, FireOutlined } from '@ant-design/icons';
@@ -13,12 +15,31 @@ import Link from 'next/link';
 const MyList = (props) => {
 
   const [mylist, setMylist] = useState(props.data);
+  // const [mylist, setMylist] = useState([]);
 
   // const [mylist, setMylist] = useState(props.listdata);
 
   console.log("props:", props)
 
+  // useEffect(() => {
+  //   setMylist(list.data)
+  // })
 
+  // useEffect(() => {
+  //   const fetchData = async (context) => {
+  //     const id = context.query.id
+  //     console.log('context.query.id:', id)
+  //     const result = await axios(servicePath.getArticleListById + id).then(
+  //       (res) => {
+  //         // setNavArray(res.data.data)
+  //         return res.data.data
+  //       }
+  //     )
+
+  //     setMylist(result)
+  //   }
+  //   fetchData()
+  // }, [])
 
   return (
     <List
@@ -45,6 +66,19 @@ const MyList = (props) => {
   )
 
 }
+
+
+// MyList.getInitialProps = async (context) => {
+//   console.log('MyList.context:', context)
+
+//   let id = context.query.id
+//   const promise = new Promise((resolve) => {
+//     axios(servicePath.getArticleListById + id).then(
+//       (res) => resolve(res.data)
+//     )
+//   })
+//   return await promise
+// }
 
 export default MyList
 

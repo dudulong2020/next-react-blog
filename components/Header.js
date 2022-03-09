@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Row, Col, Menu } from 'antd';
 import { YoutubeOutlined, AppstoreOutlined, SmileOutlined } from '@ant-design/icons';
 import '../static/style/components/Header.css';
+import servicePath from '../config/apiUrl';
 
 // import '../components/iconfont';
 
@@ -39,7 +40,7 @@ const Header = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios('http://127.0.0.1:7001/default/getTypeInfo').then(
+      const result = await axios(servicePath.getTypeInfo).then(
         (res) => {
           // setNavArray(res.data.data)
           return res.data.data
@@ -54,7 +55,7 @@ const Header = () => {
   const handleClick = (e) => {
     console.log("e:",e)
     if (e.key == "99") {
-      Router.push('/index')
+      Router.push('/')
     } else {
       Router.push('/list?id=' + e.key)
     }
@@ -64,7 +65,8 @@ const Header = () => {
   return (
     <div className='header'>
       <Row type="flex" justify='center'>
-        <Col xs={24} sm={24} md={10} lg={10} xl={10}>
+      {/* <Row  > */}
+        <Col xs={24} sm={24} md={14} lg={14} xl={12}>
           <span className='header-logo'>
             技术博客123456
         </span>
@@ -73,13 +75,13 @@ const Header = () => {
         </span>
         </Col>
 
-        <Col className="memu-div" xs={0} sm={0} md={14} lg={8} xl={6}>
+        <Col className="memu-div" xs={0} sm={0} md={10} lg={10} xl={6}>
 
           <Menu
             mode="horizontal"
             onClick={handleClick}
           >
-            <Menu.Item key="home">
+            <Menu.Item key="99">
               {/* <IconFont type="icon-home" /> 首页  */}
               <Icon className="icon-home" /> 首页 
             </Menu.Item>
@@ -125,6 +127,8 @@ const Header = () => {
           </Menu>
         </Col>
       </Row>
+      
+      
 
     </div>
   )

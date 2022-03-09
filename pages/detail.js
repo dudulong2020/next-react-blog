@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios';
+import servicePath from '../config/apiUrl';
 
 // import Head from 'next/head'
 import { Row, Col, List, Icon, Breadcrumb, Affix } from 'antd'
@@ -122,7 +123,7 @@ Detail.getInitialProps = async (context) => {
   let id = context.query.id
   const promise = new Promise((resolve) => {
 
-    axios('http://127.0.0.1:7001/default/getArticleListById/' + id).then(
+    axios(servicePath.getArticleById + id).then(
       (res) => {
         console.log('res.data:', res.data)
         resolve(res.data.data[0])
